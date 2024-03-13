@@ -1,0 +1,650 @@
+
+------------------
+vars-100-1.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                              703                1.40 per conflict
+c queue_decisions:                        703              100 %  decision
+c random_decisions:                         0                0 %  decision
+c score_decisions:                          0                0 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-100-10.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                             1166                1.39 per conflict
+c queue_decisions:                       1144               98 %  decision
+c random_decisions:                        22                2 %  decision
+c score_decisions:                          0                0 %  decision
+0 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-100-2.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                               48                1.66 per conflict
+c queue_decisions:                         48              100 %  decision
+c random_decisions:                         0                0 %  decision
+c score_decisions:                          0                0 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-100-3.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                             1550                1.14 per conflict
+c queue_decisions:                       1116               72 %  decision
+c random_decisions:                        30                2 %  decision
+c score_decisions:                        404               26 %  decision
+0 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-100-4.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                             1492                1.36 per conflict
+c queue_decisions:                       1352               91 %  decision
+c random_decisions:                        25                2 %  decision
+c score_decisions:                        115                8 %  decision
+0 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-100-5.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                              460                1.20 per conflict
+c queue_decisions:                        460              100 %  decision
+c random_decisions:                         0                0 %  decision
+c score_decisions:                          0                0 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-100-6.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             2003                2.07 per conflict
+c queue_decisions:                       1901               95 %  decision
+c random_decisions:                       102                5 %  decision
+c score_decisions:                          0                0 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-100-7.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                              204                1.19 per conflict
+c queue_decisions:                        204              100 %  decision
+c random_decisions:                         0                0 %  decision
+c score_decisions:                          0                0 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-100-8.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                              311                1.35 per conflict
+c queue_decisions:                        311              100 %  decision
+c random_decisions:                         0                0 %  decision
+c score_decisions:                          0                0 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-100-9.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                              683                1.16 per conflict
+c queue_decisions:                        661               97 %  decision
+c random_decisions:                        22                3 %  decision
+c score_decisions:                          0                0 %  decision
+0 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-150-1.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             5482                1.87 per conflict
+c queue_decisions:                       4128               75 %  decision
+c random_decisions:                       189                3 %  decision
+c score_decisions:                       1165               21 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-150-10.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                             9125                1.46 per conflict
+c queue_decisions:                       6392               70 %  decision
+c random_decisions:                       466                5 %  decision
+c score_decisions:                       2267               25 %  decision
+0 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-150-2.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             7347                1.22 per conflict
+c queue_decisions:                       5252               71 %  decision
+c random_decisions:                       197                3 %  decision
+c score_decisions:                       1898               26 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-150-3.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             2015                1.45 per conflict
+c queue_decisions:                       1396               69 %  decision
+c random_decisions:                       109                5 %  decision
+c score_decisions:                        510               25 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-150-4.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             4956                1.24 per conflict
+c queue_decisions:                       2784               56 %  decision
+c random_decisions:                       129                3 %  decision
+c score_decisions:                       2043               41 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-150-5.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                             9687                1.48 per conflict
+c queue_decisions:                       6903               71 %  decision
+c random_decisions:                       233                2 %  decision
+c score_decisions:                       2551               26 %  decision
+1 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-150-6.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             1468                1.50 per conflict
+c queue_decisions:                       1418               97 %  decision
+c random_decisions:                        50                3 %  decision
+c score_decisions:                          0                0 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-150-7.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                             9595                1.52 per conflict
+c queue_decisions:                       6886               72 %  decision
+c random_decisions:                       416                4 %  decision
+c score_decisions:                       2293               24 %  decision
+0 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-150-8.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             3343                1.36 per conflict
+c queue_decisions:                       2259               68 %  decision
+c random_decisions:                        48                1 %  decision
+c score_decisions:                       1036               31 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-150-9.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             7827                1.46 per conflict
+c queue_decisions:                       5699               73 %  decision
+c random_decisions:                       193                2 %  decision
+c score_decisions:                       1935               25 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-200-1.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                            33505                1.68 per conflict
+c queue_decisions:                      21990               66 %  decision
+c random_decisions:                      1403                4 %  decision
+c score_decisions:                      10112               30 %  decision
+1 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-200-10.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                            33267                1.44 per conflict
+c queue_decisions:                      21593               65 %  decision
+c random_decisions:                      1493                4 %  decision
+c score_decisions:                      10181               31 %  decision
+1 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-200-2.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             8268                1.25 per conflict
+c queue_decisions:                       5394               65 %  decision
+c random_decisions:                       113                1 %  decision
+c score_decisions:                       2761               33 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-200-3.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                            27680                1.30 per conflict
+c queue_decisions:                      16627               60 %  decision
+c random_decisions:                       681                2 %  decision
+c score_decisions:                      10372               37 %  decision
+1 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-200-4.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                            17677                1.43 per conflict
+c queue_decisions:                      11760               67 %  decision
+c random_decisions:                      1092                6 %  decision
+c score_decisions:                       4825               27 %  decision
+1 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-200-5.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                            23718                1.60 per conflict
+c queue_decisions:                      15356               65 %  decision
+c random_decisions:                       932                4 %  decision
+c score_decisions:                       7430               31 %  decision
+0 s
+misat:
+UNSATISFIABLE
+0 s
+
+------------------
+vars-200-6.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             3986                1.40 per conflict
+c queue_decisions:                       2775               70 %  decision
+c random_decisions:                        69                2 %  decision
+c score_decisions:                       1142               29 %  decision
+0 s
+misat:
+SATISFIABLE
+1 s
+
+------------------
+vars-200-7.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                            67077                1.64 per conflict
+c queue_decisions:                      43823               65 %  decision
+c random_decisions:                      2426                4 %  decision
+c score_decisions:                      20828               31 %  decision
+0 s
+misat:
+UNSATISFIABLE
+1 s
+
+------------------
+vars-200-8.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             3507                1.50 per conflict
+c queue_decisions:                       2210               63 %  decision
+c random_decisions:                       177                5 %  decision
+c score_decisions:                       1120               32 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-200-9.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             5375                1.88 per conflict
+c queue_decisions:                       4039               75 %  decision
+c random_decisions:                       223                4 %  decision
+c score_decisions:                       1113               21 %  decision
+0 s
+misat:
+SATISFIABLE
+1 s
+
+------------------
+vars-250-1.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                           179171                1.69 per conflict
+c queue_decisions:                     106620               60 %  decision
+c random_decisions:                      5593                3 %  decision
+c score_decisions:                      66958               37 %  decision
+2 s
+misat:
+UNSATISFIABLE
+3 s
+
+------------------
+vars-250-10.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             4186                1.47 per conflict
+c queue_decisions:                       2907               69 %  decision
+c random_decisions:                       147                4 %  decision
+c score_decisions:                       1132               27 %  decision
+0 s
+misat:
+SATISFIABLE
+0 s
+
+------------------
+vars-250-2.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                           241973                1.72 per conflict
+c queue_decisions:                     147498               61 %  decision
+c random_decisions:                      8052                3 %  decision
+c score_decisions:                      86423               36 %  decision
+3 s
+misat:
+UNSATISFIABLE
+3 s
+
+------------------
+vars-250-3.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             3882                1.33 per conflict
+c queue_decisions:                       2598               67 %  decision
+c random_decisions:                        66                2 %  decision
+c score_decisions:                       1218               31 %  decision
+0 s
+misat:
+SATISFIABLE
+1 s
+
+------------------
+vars-250-4.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                            71555                1.72 per conflict
+c queue_decisions:                      46354               65 %  decision
+c random_decisions:                      2895                4 %  decision
+c score_decisions:                      22306               31 %  decision
+1 s
+misat:
+SATISFIABLE
+2 s
+
+------------------
+vars-250-5.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                           163353                1.61 per conflict
+c queue_decisions:                      95499               58 %  decision
+c random_decisions:                      5691                3 %  decision
+c score_decisions:                      62163               38 %  decision
+2 s
+misat:
+UNSATISFIABLE
+3 s
+
+------------------
+vars-250-6.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                           279504                1.61 per conflict
+c queue_decisions:                     172739               62 %  decision
+c random_decisions:                      8275                3 %  decision
+c score_decisions:                      98490               35 %  decision
+3 s
+misat:
+UNSATISFIABLE
+9 s
+
+------------------
+vars-250-7.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                            84760                1.71 per conflict
+c queue_decisions:                      50064               59 %  decision
+c random_decisions:                      2856                3 %  decision
+c score_decisions:                      31840               38 %  decision
+1 s
+misat:
+SATISFIABLE
+1 s
+
+------------------
+vars-250-8.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                           240001                1.70 per conflict
+c queue_decisions:                     146204               61 %  decision
+c random_decisions:                      7190                3 %  decision
+c score_decisions:                      86607               36 %  decision
+4 s
+misat:
+UNSATISFIABLE
+5 s
+
+------------------
+vars-250-9.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                            49569                1.96 per conflict
+c queue_decisions:                      34615               70 %  decision
+c random_decisions:                      1959                4 %  decision
+c score_decisions:                      12995               26 %  decision
+1 s
+misat:
+SATISFIABLE
+1 s
+
+------------------
+vars-300-1.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                           192662                1.92 per conflict
+c queue_decisions:                     123668               64 %  decision
+c random_decisions:                      6628                3 %  decision
+c score_decisions:                      62366               32 %  decision
+2 s
+misat:
+SATISFIABLE
+2 s
+
+------------------
+vars-300-10.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                           269257                2.10 per conflict
+c queue_decisions:                     186459               69 %  decision
+c random_decisions:                      9864                4 %  decision
+c score_decisions:                      72934               27 %  decision
+3 s
+misat:
+SATISFIABLE
+10 s
+
+------------------
+vars-300-2.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                          1634876                1.61 per conflict
+c queue_decisions:                     927290               57 %  decision
+c random_decisions:                     50942                3 %  decision
+c score_decisions:                     656644               40 %  decision
+36 s
+misat:
+UNSATISFIABLE
+46 s
+
+------------------
+vars-300-3.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                           847480                1.63 per conflict
+c queue_decisions:                     488075               58 %  decision
+c random_decisions:                     27558                3 %  decision
+c score_decisions:                     331847               39 %  decision
+14 s
+misat:
+UNSATISFIABLE
+27 s
+
+------------------
+vars-300-4.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                          1179846                1.66 per conflict
+c queue_decisions:                     695585               59 %  decision
+c random_decisions:                     37034                3 %  decision
+c score_decisions:                     447227               38 %  decision
+33 s
+misat:
+UNSATISFIABLE
+61 s
+
+------------------
+vars-300-5.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                           467568                1.82 per conflict
+c queue_decisions:                     282981               61 %  decision
+c random_decisions:                     16882                4 %  decision
+c score_decisions:                     167705               36 %  decision
+7 s
+misat:
+SATISFIABLE
+26 s
+
+------------------
+vars-300-6.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                           737880                1.64 per conflict
+c queue_decisions:                     422843               57 %  decision
+c random_decisions:                     23604                3 %  decision
+c score_decisions:                     291433               39 %  decision
+16 s
+misat:
+UNSATISFIABLE
+22 s
+
+------------------
+vars-300-7.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                             4294                1.49 per conflict
+c queue_decisions:                       2858               67 %  decision
+c random_decisions:                       284                7 %  decision
+c score_decisions:                       1152               27 %  decision
+1 s
+misat:
+SATISFIABLE
+8 s
+
+------------------
+vars-300-8.cnf
+KisSAT:
+UNSATISFIABLE
+c decisions:                          1518130                1.67 per conflict
+c queue_decisions:                     864230               57 %  decision
+c random_decisions:                     44378                3 %  decision
+c score_decisions:                     609522               40 %  decision
+42 s
+misat:
+UNSATISFIABLE
+53 s
+
+------------------
+vars-300-9.cnf
+KisSAT:
+SATISFIABLE
+c decisions:                            49580                1.96 per conflict
+c queue_decisions:                      34393               69 %  decision
+c random_decisions:                      2186                4 %  decision
+c score_decisions:                      13001               26 %  decision
+0 s
+misat:
+SATISFIABLE
+13 s
