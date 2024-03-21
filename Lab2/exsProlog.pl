@@ -141,10 +141,20 @@ union([_|T1],L2,R):-
 
 % suma(+L,?S)
 
+suma([], 0).
+suma([X|Xs], S) :-
+    suma(Xs, S1),
+    S is X + S1.
 
 
 
 % suma_la_resta(+L)
+% suma_la_resta(+L)
+suma_la_resta(L) :-
+    member(X, L),
+    select(X, L, Rest),
+    suma(Rest, S),
+    X =:= S.
 
 
 
