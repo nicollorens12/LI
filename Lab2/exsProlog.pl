@@ -95,13 +95,17 @@ union([_|T1],L2,R):-
 
 % ultim(+L,?E)
 
-
+ultim(L,E) :- append(_,[E],L).
 
 
 % inversa(+L1,?L2)
 
 
+inversa([],[]).
 
+inversa([H|L],L2) :- 
+    inversa(L,L1),
+    append(L1,[H],L2).
 
 
 
@@ -112,6 +116,16 @@ union([_|T1],L2,R):-
 % fib(1) = 1, fib(2) = 1, i si N > 2 llavors
 % fib(N) = fib(N-1) + fib(N-2)
 
+fibonacci(1,1).
+fibonacci(2,1).
+
+fibonacci(N,F):- 
+    N > 2,
+    N1 is N-1,
+    N2 is N-2,
+    fibonacci(N1,F1),
+    fibonacci(N2,F2),
+    F is F1+F2.
 
 
 
@@ -125,8 +139,15 @@ union([_|T1],L2,R):-
 % Tant P com N venen instanciats. El predicat deu ser capaç de
 % generar totes les solucions possibles,
 
+dados(0,_,[]).
 
-
+dados(P,N,L):- 
+    N > 0,
+    member(X,[1,2,3,4,5,6]),
+    P1 is P-X,
+    N1 is N-1,
+    dados(P1,N1,L1),
+    L = [X|L1].
 
 
 
