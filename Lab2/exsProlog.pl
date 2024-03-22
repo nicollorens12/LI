@@ -184,7 +184,7 @@ suma_la_resta(L) :-
 
 % PROB. H =========================================================
 % Escriu un predicat
-% card(+L) que, donada una llista d'enters L, escriba la llista
+% card(+L) que, donada unaa llista d'enters L, escriba la llista
 % que, para cada element d'L, diu quantes vegades surt aquest
 % element en L.
 % Per exemple, si fem la consulta
@@ -193,8 +193,30 @@ suma_la_resta(L) :-
 
 
 
+ocurrenceList([Y],X,1):- Y == X,!.
+ocurrenceList([Y],X,0):- Y \== X,!.
+ocurrenceList(L,X,R):-
+    append([Y],YS,L),
+    ocurrenceList(YS,X,R1),
+    Y == X,
+    R is 1 + R1,!.
+
+ocurrenceList(L,X,R):-
+    append([Y],YS,L),
+    ocurrenceList(YS,X,R1),
+    Y \== X,
+    R is R1,!.
 
 
+card(X):- card1(X,L), write(L).
+
+card1([],[[]]).
+card1([X],[[X,1]]).
+card1([X|L],R):-
+    ocurrenceList(X,L,OX),
+    delete(X, L, L1),
+    card1(L1,R1),
+    append([[X,OX]],R1,R).
 
 
 % PROB. I ========================================================
@@ -208,7 +230,11 @@ suma_la_resta(L) :-
 % respon no.
 
 
-
+esta_ordenada([]).
+esta_ordenada([_]).
+esta_ordenada([X,Y|L]) :- 
+    X =< Y,
+    esta_ordenada([Y|L]).
 
 
 
@@ -216,11 +242,18 @@ suma_la_resta(L) :-
 
 % PROB. J ========================================================
 % Escriu un predicat
-% palíndroms(+L) que, donada una llista de lletres L escrigui
+% palindroms(+L) que, donada una llista de lletres L escrigui
 % totes les permutacions dels seus elements que siguin palíndroms
 % (capicues). Per exemple, amb la consulta palindrom([a,a,c,c])
 % s'escriu [a,c,c,a] i [c,a,a,c]
 % (possiblement diverses vegades, no cal que eviteu les repeticions).
+
+palindroms(L) :-
+    permutation(L, P),
+    reverse(P, P),
+    write(P),
+    nl.
+
 
 
 
@@ -250,22 +283,25 @@ suma_la_resta(L) :-
 % significa: P és una cadena de dominó correcta (tal qual,
 % sense necessitat de girar cap fitxa):
 
-p([],[]).
-p(L,[X|P]) :- select(X,L,R), p(R,P).
+p([], []).
+p(L, [X|P]) :- select(X, L, R), p(R, P).
+p(L, [X|P]) :- flip(X, Y), select(Y, L, R), p(R, P).
 
-dom(L) :- p(L,P), ok(P), write(P), nl.
+dom(L) :- p(L, P), ok(P), write(P), nl.
 dom(_) :- write('no hi ha cadena'), nl.
+
 
 % a) Escriu el predicat ok(+P) que falta.
 
-
+ok([_]).
+ok([f(_,X),f(Y,_)|P]) :- X = Y, ok([f(Y,_)|P]).
 
 
 
 
 % b) Estén el predicat p/2 per a que el programa també pugui
 %    fer cadenes girant alguna de les fitxes de l'entrada.
-
+flip(f(X, Y), f(Y, X)).
 
 
 
@@ -278,13 +314,19 @@ dom(_) :- write('no hi ha cadena'), nl.
 % ?- flatten( [a,b,[c,[d],e,[]],f,[g,h]], F ).
 % F = [a,b,c,d,e,f,g,h]
 
-
+flatten([], []).
+flatten([H|T], F) :-
+    flatten(H, FH),
+    flatten(T, FT),
+    append(FH, FT, F).
+flatten(X, [X]) :- \+ is_list(X).
 
 
 
 
 
 % PROB. M ========================================================
+% BEGIN: ed8c6549bwf9
 % Consider two groups of 10 people each. In the first group,
 % as expected, the percentage of people with lung cancer among smokers
 % is higher than among non-smokers.
@@ -293,6 +335,35 @@ dom(_) :- write('no hi ha cadena'), nl.
 % the situation is the opposite: the proportion of people with
 % lung cancer is higher among non-smokers than among smokers!
 % Can this be true? Write a little Prolog program to find it out.
+
+% Define the predicates for the first group
+group1(SmokersWithCancer, SmokersWithoutCancer, NonSmokersWithCancer, NonSmokersWithoutCancer) :-
+    between(0, 10, SmokersWithCancer),
+    between(0, 10, SmokersWithoutCancer),
+    between(0, 10, NonSmokersWithCancer),
+    between(0, 10, NonSmokersWithoutCancer),
+    SmokersWithCancer > SmokersWithoutCancer,
+    NonSmokersWithCancer > NonSmokersWithoutCancer.
+
+% Define the predicates for the second group
+group2(SmokersWithCancer, SmokersWithoutCancer, NonSmokersWithCancer, NonSmokersWithoutCancer) :-
+    between(0, 10, SmokersWithCancer),
+    between(0, 10, SmokersWithoutCancer),
+    between(0, 10, NonSmokersWithCancer),
+    between(0, 10, NonSmokersWithoutCancer),
+    SmokersWithCancer > SmokersWithoutCancer,
+    NonSmokersWithCancer > NonSmokersWithoutCancer.
+
+% Check if the situation is true for the combined groups
+isSituationTrue :-
+    group1(S1C, S1NC, NS1C, NS1NC),
+    group2(S2C, S2NC, NS2C, NS2NC),
+    TotalSmokersWithCancer is S1C + S2C,
+    TotalSmokersWithoutCancer is S1NC + S2NC,
+    TotalNonSmokersWithCancer is NS1C + NS2C,
+    TotalNonSmokersWithoutCancer is NS1NC + NS2NC,
+    TotalSmokersWithCancer < TotalSmokersWithoutCancer,
+    TotalNonSmokersWithCancer > TotalNonSmokersWithoutCancer.
 
 %main :-
 %    between(0,3,SC1),    % SC1:   "no.    smokers with    cancer group 1"
