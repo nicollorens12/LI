@@ -52,7 +52,7 @@
 %%%%%%% end input example %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-symbolicOutput(1).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
+symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
 
 
 %%%%%%% Some helpful definitions to make the code cleaner: ====================================
@@ -79,10 +79,11 @@ satVariable( dcc(D, C1, C2))    :- day(D), trip(C1-C2).
 %%%%%%%  2. Clause generation for the SAT solver: =============================================
 
 writeClauses :- 
-    %exactlyOneTripDayBus,       
-    %maxTimesTripOnDay,      
-    %minimumTripTimesWeek,
-    consecutiveTripsValid,
+    exactlyOneTripDayBus,       
+    maxTimesTripOnDay,      
+    minimumTripTimesWeek,
+    consecutiveTripsValidCities,
+    consecutiveTripsValidKm,
     true,!.
 writeClauses :- told, nl, write('writeClauses failed!'), nl,nl, halt.
 
@@ -110,15 +111,24 @@ minimumTripTimesWeek:-
     fail.
 minimumTripTimesWeek.
 
-consecutiveTripsValid:-
+consecutiveTripsValidCities:- 
     bus(B),
     consecutiveDays(D1, D2), 
     trip(C1-C2),    
-    trip(C2-C3),
-    \+ tooLongDist(C1-C2-C3),
-    writeOneClause( [-bdcc(B, D1, C1, C2), bdcc(B, D2,C2,C3)]),
+    trip(C3-C4),
+    C2 \= C3,
+    writeOneClause( [-bdcc(B, D1, C1, C2), -bdcc(B, D2,C3,C4)]),
     fail.
-consecutiveTripsValid.
+consecutiveTripsValidCities.
+
+consecutiveTripsValidKm :-
+    bus(B), consecutiveDays(D1, D2),
+    trip(C1-C2),
+    trip(C2-C3),
+    tooLongDist(C1-C2-C3),
+    writeOneClause([-bdcc(B, D1, C1, C2), -bdcc(B, D2, C2, C3)]),
+    fail.
+consecutiveTripsValidKm.
 
 
 
