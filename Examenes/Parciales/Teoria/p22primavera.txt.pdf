@@ -1,0 +1,94 @@
+
+--------------------------------------------------------------------------------------------------
+Logic in Computer Science, April 1st, 2022. Time: 1h30min. No books or lecture notes allowed.
+--------------------------------------------------------------------------------------------------
+-Insert your answers on the dotted lines ... below, and only there.
+-Do NOT modify the problems or the @nota lines.
+-When finished, upload this file with the same name: exam.txt
+-Use the text symbols:     &     v    -       ->          |=        A       E
+   for                    AND   OR   NOT   IMPLIES   "SATISFIES"  FORALL  EXISTS  etc.,  like in:
+   I  |=  p & (q v -r)     (the interpretation I satisfies the formula p & (q v -r)  ).
+   You can write subindices using "_". For example write x_i to denote x-sub-i.
+--------------------------------------------------------------------------------------------------
+
+
+Problem 1. (4 points).                                   @n@nota1:
+
+
+1a)
+Let F and G be propositional formulas such that G |= F.  Is it true that then always  F |= G  or  F |= -G ?
+Prove it as simply as you can using only the definitions of propositional logic.
+
+...
+
+1b)
+Let F and G be propositional formulas.
+Is it true that F |= G iff  F & -G  is unsatisfiable?
+Prove it using only the definitions of propositional logic.
+
+...
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 2. (3 points).                                   @n@nota2:
+
+
+2a) Explain in a few words why propositional SAT is in NP.
+
+...
+
+
+2b) Explain in a few words why 3-SAT is NP-complete. You may assume that SAT is NP-hard.
+
+...
+
+
+2c) Let F be an UNsatisfiable propositional formula built over n different predicate symbols.
+Give the name of some method to express a proof (or certificate) of unsatisfiability (like a model is a 
+certificate of satisfiability).
+Do you think that every unsatisfiable F has such an unsatisfiability proof of size polynomial in n?
+
+...
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 3. (2 points).                                   @n@nota3:
+Here just give the answer, giving no explanations. Use a^b to denote "a to the power b".
+
+
+3a)
+How many Boolean functions with n input bits f: {0,1}^n --> {0,1} are there in terms of n?
+
+...
+
+
+3b)
+Any propositional formula represents a Boolean function.
+List the names of the other methods you know to represent Boolean functions.
+
+...
+
+
+3c)
+Is it true that two formulas F and G are logically equivalent iff they represent the same Boolean function?
+
+...
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 4. (1 point ).                                   @n@nota4:
+
+4) The published Sudoku puzzles usually are designed in such a way that exactly one solution exists.
+Explain *very* briefly how you would use a SAT solver to check that a given Sudoku has exactly one solution.
+
+...
+
+
+--------------------------------------------------------------------------------------------------
+
+
+
+

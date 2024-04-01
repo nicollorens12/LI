@@ -326,7 +326,6 @@ flatten(X, [X]) :- \+ is_list(X).
 
 
 % PROB. M ========================================================
-% BEGIN: ed8c6549bwf9
 % Consider two groups of 10 people each. In the first group,
 % as expected, the percentage of people with lung cancer among smokers
 % is higher than among non-smokers.

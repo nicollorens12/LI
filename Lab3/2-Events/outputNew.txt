@@ -1,0 +1,17 @@
+Generated 1030 clauses over 136 variables. 
+Calling solver....
+Solution found: 
+
+[ed(1,2),ed(2,4),ed(3,3),ed(4,4),ed(5,4),ed(6,3),ed(7,4),ed(8,3),ed(9,2),ed(10,2),ed(11,1),ed(12,3),ed(13,1),ed(14,1),ed(15,2),em(1,4),em(2,3),em(3,4),em(4,3),em(5,3),em(6,4),em(7,1),em(8,4),em(9,2),em(10,4),em(11,1),em(12,3),em(13,1),em(14,2),em(15,4),md(1,1),md(1,4),md(2,1),md(2,2),md(3,3),md(3,4),md(4,2),md(4,3)]
+
+
+Day 1:  event(11)-mod(1)  event(13)-mod(1)  event(14)-mod(2) 
+Day 2:  event(1)-mod(4)  event(9)-mod(2)  event(10)-mod(4)  event(15)-mod(4) 
+Day 3:  event(3)-mod(4)  event(6)-mod(4)  event(8)-mod(4)  event(12)-mod(3) 
+Day 4:  event(2)-mod(3)  event(4)-mod(3)  event(5)-mod(3)  event(7)-mod(1) 
+
+Moderator 1 works: [1,4]
+Moderator 2 works: [1,2]
+Moderator 3 works: [3,4]
+Moderator 4 works: [2,3]
+
