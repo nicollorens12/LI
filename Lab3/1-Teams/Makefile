@@ -10,3 +10,6 @@ clean:
 
 realclean: clean
 	-rm -f $(file)
+
+run: $(file)
+	./$(file) teamsInput1.pl > output.txt

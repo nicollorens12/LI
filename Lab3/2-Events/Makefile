@@ -13,3 +13,6 @@ clean:
 
 realclean: clean
 	-rm -f $(file)
+
+run: $(file)
+	./$(file) eventsInput1.pl > output.txt

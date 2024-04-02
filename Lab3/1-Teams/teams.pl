@@ -1,5 +1,5 @@
 
-symbolicOutput(1).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
+symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
