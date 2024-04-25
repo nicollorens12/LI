@@ -1,5 +1,5 @@
 
-symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
+symbolicOutput(1).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% To use this prolog template for other optimization problems, replace the code parts 1,2,3,4 below. %%
@@ -121,10 +121,24 @@ satVariable( towerPos(I,J) ):- row(I), col(J).  % means "there is a tower at pos
 
 writeClauses(infinite):- !, upperLimitTowers(N), writeClauses(N),!.
 writeClauses(MaxNumTowers):-
-    ...
+    %eachTowerOnVillage(MaxNumTowers),
+    atMostOneTowerPerVillage,
+    %eachVillageWatchedByAtLeastOneTower(MaxNumTowers),
+    %significantVillagesWithTower(MaxNumTowers),
     true,!.                    % this way you can comment out ANY previous line of writeClauses
 writeClauses(_):- told, nl, write('writeClauses failed!'), nl,nl, halt.
 
+
+eachTowerOnVillage:-
+        towerPos(I,J),
+        findall(towerPos(I,J),posVillage(I,J),L),
+eachTowerOnVillage.
+
+atMostOneTowerPerVillage:-
+        village(V),
+        findall(towerPos(I,J),posVillage(V,I,J),L),
+        exactly(1,L),
+        fail.
 
 %%%%%%%  3. DisplaySol: this predicate displays a given solution M: ===========================
 
@@ -142,7 +156,7 @@ write2(N):- write(N),!.
 
 %%%%%%%  4. This predicate computes the cost of a given solution M: ===========================
 
-costOfThisSolution(M,Cost):- ...
+%costOfThisSolution(M,Cost):- ...
 
 
 %%%%%% ========================================================================================

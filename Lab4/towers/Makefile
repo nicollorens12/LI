@@ -1,5 +1,5 @@
-file = minColoring
-#file = towers
+#file = minColoring
+file = towers
 #file = gangsters
 
 $(file): $(file).pl
