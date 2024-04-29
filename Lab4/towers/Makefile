@@ -12,3 +12,6 @@ clean:
 
 realclean: clean
 	-rm -f $(file)
+
+run: $(file)
+	./$(file) towersInput1.pl > output.txt

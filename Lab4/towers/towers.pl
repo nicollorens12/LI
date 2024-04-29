@@ -1,6 +1,3 @@
-
-symbolicOutput(1).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% To use this prolog template for other optimization problems, replace the code parts 1,2,3,4 below. %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,9 +105,12 @@ posWatchesVillage(V,I,J):- position(I,J), colVillage(V,J).            %         
 %%%%%%% End helpful definitions ===============================================================
 
 
+symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
+
 %%%%%%%  1. Declare SAT variables to be used: =================================================
 
 satVariable( towerPos(I,J) ):- row(I), col(J).  % means "there is a tower at position I-J"
+satVariable( towerVila(V) ):- village(V).
 % YOU MAY WANT TO INTRODUCE SOME OTHER VARIABLE FOR MAKING THE CARDINALITY CONSTRAINTS SMALLER
 
 
@@ -121,24 +121,59 @@ satVariable( towerPos(I,J) ):- row(I), col(J).  % means "there is a tower at pos
 
 writeClauses(infinite):- !, upperLimitTowers(N), writeClauses(N),!.
 writeClauses(MaxNumTowers):-
-    %eachTowerOnVillage(MaxNumTowers),
     atMostOneTowerPerVillage,
-    %eachVillageWatchedByAtLeastOneTower(MaxNumTowers),
-    %significantVillagesWithTower(MaxNumTowers),
-    true,!.                    % this way you can comment out ANY previous line of writeClauses
+    allTowersInVillage,
+    allVillagesWatched,
+    towerOnSignificantVillages,
+    atMostMaxNumtowers(MaxNumTowers),
+    tieVars,
+    true,!.                   % this way you can comment out ANY previous line of writeClauses
 writeClauses(_):- told, nl, write('writeClauses failed!'), nl,nl, halt.
-
-
-eachTowerOnVillage:-
-        towerPos(I,J),
-        findall(towerPos(I,J),posVillage(I,J),L),
-eachTowerOnVillage.
 
 atMostOneTowerPerVillage:-
         village(V),
         findall(towerPos(I,J),posVillage(V,I,J),L),
-        exactly(1,L),
+        atMost(1,L),
         fail.
+atMostOneTowerPerVillage.
+
+allTowersInVillage:- 
+        position(I,J), 
+        not(posVillage(_, I, J)),
+        writeOneClause( [-towerPos(I, J)]),
+        fail. 
+allTowersInVillage.
+
+allVillagesWatched:- 
+        village(V), 
+        findall(towerPos(I,J), posWatchesVillage(V,I,J), L), 
+        atLeast(1,L),
+        fail.
+allVillagesWatched.
+
+towerOnSignificantVillages:- 
+        significantVillage(V), 
+        writeOneClause([towerVila(V)]), 
+        fail.
+towerOnSignificantVillages.
+
+atMostMaxNumtowers(MaxNumTowers):-
+        upperLimitTowers(M),
+        Max is min(MaxNumTowers,M), 
+        findall(towerVila(V) ,village(V),L), 
+        atMost(Max,L),
+        fail.
+atMostMaxNumtowers(_).
+
+tieVars:- 
+        village(V), 
+        findall(towerPos(I,J), posVillage(V,I,J), Lits), 
+        expressOr(towerVila(V), Lits),
+        fail.
+tieVars.
+
+
+
 
 %%%%%%%  3. DisplaySol: this predicate displays a given solution M: ===========================
 
@@ -156,7 +191,9 @@ write2(N):- write(N),!.
 
 %%%%%%%  4. This predicate computes the cost of a given solution M: ===========================
 
-%costOfThisSolution(M,Cost):- ...
+costOfThisSolution(M,Cost):- 
+        findall(towerPos(I,J), member(towerPos(I,J), M), L),
+        length(L, Cost).
 
 
 %%%%%% ========================================================================================

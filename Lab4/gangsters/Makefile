@@ -1,6 +1,6 @@
-file = minColoring
+#file = minColoring
 #file = towers
-#file = gangsters
+file = gangsters
 
 $(file): $(file).pl
 	swipl -q -O -g main --stand_alone=true -o $(file) -c $(file).pl
@@ -12,3 +12,6 @@ clean:
 
 realclean: clean
 	-rm -f $(file)
+
+run: $(file)
+	./$(file) gangstersInput1.pl > output.txt

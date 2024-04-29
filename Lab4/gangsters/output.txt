@@ -1,0 +1,1997 @@
+Looking for initial solution with arbitrary cost...
+Generated 103251 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 72
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p----------p-------c-------k--k---
+gangster g02: ------c-c-c-k------------c---cc-c----cc----k-----p--------p---------c---
+gangster g03: k--k--p--p-----c-k-p-----c----p-k-----p-----p------p-pp--c--c--cc---c-k-
+gangster g04: -p----p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-cc-p-c-c--c-pp-k-ppp--
+gangster g05: -p-c--p--p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--pp-kk-ccc-k-p--ppp-kk-c--
+gangster g06: k--kk-c---cc-p--p-p-k-k-kk-k-k--ccc-ccc-c-ppp--cc-ccccc-kkkkk-ccc-cc-cc-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-k--k-cc-kk-kkk-kkk-pppppppp-k-pp-kkkk-cc-pp-
+gangster g08: ppp--c-k--cccc--p-pp-p-pp--cccccccc-kk--cccccc-c-kkk-kkkk--p-kkkk-cc--kk
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkkkk-pppppp--k-kkk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-k--kkkkk--k-ppp
+gangster g11: ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp-pppppppp-ppp
+gangster g12: cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 71...
+Generated 103287 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 71
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------c-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: cc-c--p--p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p--p-p-k-k-kk-k-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: pp-c-c-k-p-ppp--p--kk--pp-p-k--k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p-pp--cccccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: -ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: -ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 70...
+Generated 103323 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 70
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -p------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: -p----c-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: cc-c--p--p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: ---kk-c---cc-p--p-p-k-k-kk-k-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-k--k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p-pp--cccccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: p-kk-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: k-pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: k-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 69...
+Generated 103359 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 69
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -c------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: --p---c-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k-k---p--p-----c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: --p---p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: k--c--p--p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -p-k-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: -p-k-c-k--cccc--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: cccc-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: pp-ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: pp-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 68...
+Generated 103395 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 68
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ---c--c-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: -p-p--p--p-----c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: k-k---p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-k--p--p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: k--k-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: -c-c-c-k--cccc--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: cccc-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ppp-pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ppp-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 67...
+Generated 103431 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 67
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: k-----c-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: k-----p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -pp-p-p--p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -p-kk-c---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: --kk-c-k--cccc--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: pp-ccc-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: pppp-ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: cccc-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 66...
+Generated 103467 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 66
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k----pp--p-----c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: k-p---p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c-cc--p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -p-c-cc---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-k-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: pp-k-c-k--cccc--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kkk--k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ccccc-pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ppppp-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 65...
+Generated 103503 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 65
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -------k-p---------------k--k-pp------p----------p------kk--c---c----c--
+gangster g02: -----cccc-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k----cc-c------c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: k-p---p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--cc-p-p-p--
+gangster g05: -p-c-k-k-p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--pp-k-k--k-
+gangster g06: -p-c--c---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ppp--k-pp-
+gangster g07: -c-k-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: pp-k-c----cccc--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kkk-kk--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkk-p-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp-pppppp
+gangster g12: ccccc-p-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 64...
+Generated 103539 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 64
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ------p-c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p-----k--k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c---k-p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk--k--cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-cc--p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-p--cccc--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-ccc--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ppppppp-pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ccccccc-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 63...
+Generated 103575 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 63
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ------c------------------k---c-p------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-k------------c--kkkkk----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p-----c--k-p-c-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p-----k--k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p-pp-p-p-k--p-k-k---pp--pp-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk---c-cc-p--p-p-k-k-kk-k-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-k--k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p-pp--cccc-kkk-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-cc-c-kkkk---kkk-ppppp-k-cccccc-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: pppppppp-ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: cccccccc-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 62...
+Generated 103611 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 62
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ---------p-p-------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------p--p--k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-p---c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p-----k-p--k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p-cccc-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c-c-c--p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k--cccc--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--k-pp--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-cc---kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ccccccccc-pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ppppppppp-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 61...
+Generated 103647 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 61
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ----------k--------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-p---c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---c-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c---k--cc-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk--k--k--p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-kkk--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--cc--ppppp--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-cc-c-cccc---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: pppppppppp-ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: cccccccccc-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 60...
+Generated 103683 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 60
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c-cc-------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------p-c-k-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p----p-p-c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---c-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--c---kkkk-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk--k--cc----p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-p-p--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--cc--p-ccc--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k-p-ppp---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ccccccccccc-pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ppppppppppp-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 59...
+Generated 103719 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 59
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c-c--------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-c------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p----c-p-c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---c-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--c---k-k--k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk--k--kkkk--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--cc--p-ccc--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k-p-ppp---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: cccccccccccc-ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: pppppppppppp-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 58...
+Generated 103755 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 58
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------cccc-------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-c-p-c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---c-cc---c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--c----p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk--k--cccc--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--cc--p---p--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: ccccccccc-k-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: kkkkkkkkkkkkk-pppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ppppppppppppp-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 57...
+Generated 103791 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 57
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c-c--------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p----p---k-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--c---k--p-c--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk--k--cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-kkk--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--cc--p-pppp-p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k-p-cccc--kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: cccccccccccccc-ppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: pppppppppppppp-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 56...
+Generated 103827 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 56
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: k-----c-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc-pp-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk-c-kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: -kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ppppppppppppppp-pppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ccccccccccccccc-cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 55...
+Generated 103863 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 55
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c-------p--------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------c-c-c-k---p--------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-------k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: k-----p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p--p-p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -p-kk-c---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp-----kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc-cc-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: kkkk-c-k--kkkk-k-kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: k-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: pppppppppppppppp-ppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: cccccccccccccccc-ccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 54...
+Generated 103899 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 54
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------c-c-c-k----c-------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: -p-c--p--p-----k-c-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: k-----p---k-k----k--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -c-c--p--p-p-p-c--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -pp-k-c---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: k--k-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: k-kk-c-k--cccc---kkk-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: kkkk-c-k--kkkk--pppp-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: pp-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ppppppppppppppppp-pppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ccccccccccccccccc-cccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 53...
+Generated 103935 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 53
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ---c--c-c-c-k--c-k-p-----c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p------p-pp-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: k-----p---k-k-----p-c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p--p-p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -p-kk-c---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: ppp--c-k-p-ppp-k--c-k--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: k-kk-c-k--cccc---c-k-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: -c-k-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: pppppppppppppppppp-ppppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: cccccccccccccccccc-ccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 52...
+Generated 103971 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 52
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ---c--c-c-c-k------p-----c---cc-c----cc----k------c-----k---c-----------
+gangster g03: -p-c--p--p-----k-k-p-----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c-cc-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: k---k-p--p-p-p-c--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -c-kk-c---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: k--k-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ppppppppppppppppppp-pppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ccccccccccccccccccc-cccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 51...
+Generated 104007 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 51
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-k------p-----c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k-----p--p-----c-k--c----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: k-p---p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--c--p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -p-c-cc---cc-p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-k-c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: pp-k-c-k--cccc---kkk-p-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kkkk-k--kkkk--p-pppppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: pppppppppppppppppppp-ppppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: cccccccccccccccccccc-ccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 50...
+Generated 104043 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 50
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c------------p---k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-k-------k----c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k-----p--p-----c----k----c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: k-p---p---k-k----k--k-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--c--p-p-p-k-c-k--k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -p-c-cc---cc-p--p-pp--k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-k-c-k-p-ppp--p-pp-p-pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: pp-k-c-k--cccc--p-p-cc-pp--kk-ccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kkk-kk--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ppppppppppppppppppppp-pppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ccccccccccccccccccccc-cccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 49...
+Generated 104079 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 49
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ------c-c----------------k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------c-c-c-k------------c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p--c--c----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk--k--cc-p--p-p-k-k-kk-k-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-k--k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-pppp--cccccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: pppppppppppppppppppppp-ppppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: cccccccccccccccccccccc-ccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 48...
+Generated 104115 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 48
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------k-c------------------c-p------p----------p------kk--c--------c--
+gangster g02: ------c--p--k--k------k--c--kkkkk----cc----k------c-----k---c-----------
+gangster g03: k--k--p-c------c----k-k--c--k-p-c-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p-c-k-k----c--c--p--p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p--p-p-k--pp-pp--pp-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p---k-kk--c-k-k-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p-pp-p-pp-p-k--k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp--c-kk-cccc-kkk-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-k-cccccc-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ccccccccccccccccccccccc-pppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ppppppppppppppppppppppp-cccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 47...
+Generated 104151 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 47
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c--------------------c-p------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-k------------c--kkkkk----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p--c-cc--k-p-c-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--c-k-p-p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--c--p-p-p-k--p-k-k-p-pp--pp-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk--k--cc-p--p-p-k--p-k-k-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-k--k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p--kk-cccc-kkk-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-cc--kkkkk---kkk-ppppp-k-cccccc-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: cccccccccccccccccccccccc-ppppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: pppppppppppppppppppppppp-ccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 46...
+Generated 104187 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 46
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c-k------------pppp--c-p------p----------p------kk--c--------c--
+gangster g02: ------c-c-c-k-----------p-p-kkkkk----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p-----c--k-p-c-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p-k--p-k-k--k-p--pp-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p--p-p-k-k--c-k-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--p-c--k--k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p--kk-cccc-kkk-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-k-cccccc-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: ccccccccccccccccccccccccc-pppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ppppppppppppppppppppppppp-cccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 45...
+Generated 104223 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 45
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -------------------------c-----p------p----------p------kk--c--------c--
+gangster g02: ------c--p-kk-------------p--k--c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-p---k-k-p-----k----p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---c-k----c--c-c---p-k-p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p-c-cc-p-c--p-k-k-p-p-k-pp-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c-c-cc-p--p-p-k-k-kk-k-cc-ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-pp-c-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--k-cc--p-pp-p-p-cccccccccc-kk--cccccc-cc-cccccc-kk-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-p-kkkkkkkkkkkk
+gangster g11: pppppppppppppppppppppppppp-ppppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: cccccccccccccccccccccccccc-ccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 44...
+Generated 104259 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 44
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -----------------------------k-p------p----------p------kk--c--------c--
+gangster g02: ------p-c-c-k--k---------c---c--c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c----k-c--c-c--p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--k-k---pp--p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--c--p-p-p--p-pp--k-p-p-k-pp-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk--k--cc-p---k-kk--pp-pp-cc-ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p-p-c--p-k-ccc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p--kk-kk-ccccc-kk--cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-cc-c-kkkkk--kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: ccccccccccccccccccccccccccc-pppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ppppppppppppppppppppppppppp-cccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 43...
+Generated 104295 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 43
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c-------p-------------pp------p----------p------kk--c--------c--
+gangster g02: ------c-c-c-k--c---------c----c-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----k----k-c--c--p-p-k-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--k-k---p-k-p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p-k--pp--k-p-pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p---k-kk--pp-p-cc-k-cc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p-p-c--p-k-cccc-ccc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p--kk-kkk-cccc-kk--cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: cccccccccccccccccccccccccccc-ppppppppppppppppppppppppppppppppppppppppppp
+gangster g12: pppppppppppppppppppppppppppp-ccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 42...
+Generated 104331 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 42
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c---------p---------kk--cc----p----------p------kk--c--------c--
+gangster g02: ------c-c-c-k------------c-k-cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p---------p--c--c-cc-pp--c---p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--c-k----kk-pp-cc--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p-c-k--k-k-p-p--ccccc-p-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p--p-p-k--p-k--kkkk-pp-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p--c-kk-k-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p--kk-p-c--k-c-kk--cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk-kkkkk-pppppp--pp-kkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: ppppppppppppppppppppppppppppp-pppppppppppppppppppppppppppppppppppppppppp
+gangster g12: ccccccccccccccccccccccccccccc-cccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 41...
+Generated 104367 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 39
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c-------------------ppp-cc----p----------p------kk--c---c----c--
+gangster g02: ------c-c-c-k----k-------c-p-k-kk----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-c-p--c--c-kk--kk-----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----k--c-k----kk-pp-cc--c-k--cc--k-p-kk-p---c-p--cc-p-p-p--
+gangster g05: -p-c--p--p-p-p-k--p-k-k-p-p-cccc-ppp-k-k-cc-p--ppp-pppp--c-p--pp-k-k--k-
+gangster g06: k--kk-c---cc-p--p-p-k--p-k-c-kk-ccc-ccc-c-ppp--c-kkk-ccc-k-p--ppp--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-k-p-c-c-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p--kk-p-cccc-k-kk--cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-pppppp--cc-kkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkk-kkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: ppppppppppppppppppppppppppp-k-ppppppppppppppppppppppppppppppppppp-pppppp
+gangster g12: cccccccccccccccccccccccccccccc-p-ccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 38...
+Generated 104475 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 38
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------c---k-ccc----p----------p------kk--c--------c--
+gangster g02: ------c-c-c-k------p----k-p--c--k-k--cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----k-k--c----c----pp-p----p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--k-c---pp--pp-p---c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p-c--p-k-k--k-cccc-k-pp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p--p-p-k-k--k--k--k-cc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp--kk-p-ccc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p-pp--k-cc-ccc-kk--cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-pppppp-kkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: ppppppppppppppppppppppppppppppppp-pppppppppppppppppppppppppppppppppppppp
+gangster g12: ccccccccccccccccccccccccccccccccc-cccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 37...
+Generated 104511 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 37
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------c---k-p------p----------p------kk--c--------c--
+gangster g02: ------c-c-c-k-----------k-p--cccc-k--cc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----k-k-p-----c----p-k-c---p-----p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--c-c---pp--p-k-p--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p-c--p-k-k--k-ccc-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p--p-p-k-k--k--k--k-cc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p-pp-p-pp--kk-p-ccc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p--kkk-pp--k-cc-ccc-kk--cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-pppppp-kkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: pppppppppppppppppppppppppppppppppp-ppppppppppppppppppppppppppppppppppppp
+gangster g12: cccccccccccccccccccccccccccccccccc-ccccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 36...
+Generated 104547 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 36
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------------p------c----c-k---p------kk--c--------c--
+gangster g02: ------c-c-c-k---------k--c---k--c-k---p----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p--k--c----p-k--p--p--k--p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--c-c---p-k-p-k--p-c-k---k--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p-k--p-k-k-p-p-k-pp-pp-kk-k--c-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p--p-p-k--p-k-k-cc-ccc-kk-kk-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-pp-c-k-cc-kk--ccc-k--ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p--kk-kkkkkkkk--cc-cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-ccccccccccccccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: ccccccccccccccccccccccccccccccccccc-pppppppppppppppppppppppppppppppppppp
+gangster g12: ppppppppppppppppppppppppppppppppppp-cccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 35...
+Generated 104583 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 35
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -p------c----------------k--k-pp------c----------p------kk--c--------c--
+gangster g02: k-----c-c-c-k------------c---cc-c-k---p----k------c-----k---c-----------
+gangster g03: k--k--p--p-----c-k-p-----c----p-k--pp-p-----p------c-pp--c-k---cc-------
+gangster g04: k-----p---k-k----c--c-c---p---p-k--p-c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p-k--p-k-k---pp-c-p-pp-kk-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: ---kk-c---cc-p--p-p-k-k-kk-k-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: cc-c-c-k-p-ppp--p--kk--pp-p-k--k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p-pp--cccccccc-kk--cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-kkkkkkkk-cccccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: ppppppppppppppppppppppppppppppppppp-kkkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: -kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-ppppppppppppppppppppppppppppppppppp
+gangster g12: -ccccccccccccccccccccccccccccccccccc-ccccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 34...
+Generated 104619 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 34
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -c------c----------------k--k-pp---p-k-k---------p------kk--c--------c--
+gangster g02: k-----c-c-c-k------------c---cc-k---ccc-c--k------c-----k---c-----------
+gangster g03: k-----p--p-----c-k-p-----c----pp---pp-p-----p------c-pp--c-k---cc-------
+gangster g04: k-p---p---k-k----c--c-c---p---p-k-k--ccc--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: ---c--p--p-p-p-k--p-k-k---pp-c--ccc--cc--cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: --kkk-c---cc-p--p-p-k-k-kk-c-k--ccc--pp-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -p-k-c-k-p-ppp--p--kk--pp-p-cc-kkkk--c-k-c-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: kkkk-c-k--cccc--p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: cccc-c-k--kkkk---kkk-ppppp-kkkkk-pp-kk-kkk-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: -pppppppppppppppppppppppppppppppppp-kkkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: pp-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-pppppppppppppppppppppppppppppppppp
+gangster g12: pp-cccccccccccccccccccccccccccccccccc-cccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 33...
+Generated 104655 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 33
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -c-----------------------k--k-pp------pp---------p------kk--c--------c--
+gangster g02: --p--cc-c-c-k------------c---c-p--k-k-p-c--k------k-----k---c-----------
+gangster g03: -p-k--c--p-----c-k-p-----c----p-k--pp--k----p------k-pp--c-k---cc-------
+gangster g04: -p----p-c-k-k----c--k-k---p---p-k--p-cc-c-cc--k-p-cc-p---c-p--pp-k-k-p--
+gangster g05: --k-k-p--p-p-p-k--p-c-c---pp-cc-ccc--ccc-cc-p--ppp-pppp--c-p--ccc--p--k-
+gangster g06: pp-kk-p---cc-p--p-p-k-k-kk-c-k--ccc--k-k--ppp--c-kkk-ccc-k-p--ppp--k-pp-
+gangster g07: k--c-c-k-p-ppp--p--kk--pp-p-cc-kkkk--pp-cc-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: k--k-c-k--cccc--p-pp-p-pp--kk-ccccc-kk-k-ccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: pp-ccc-k--kkkk---kkk-ppppp-kkkkk-pp-kkkkkk-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: k-ppppppppppppppppppppppppppppppppp-ccc-kkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: cccc--ccccccccccccccccccccccccccccccccc-pppppppppppppppppppppppppppppppp
+gangster g12: kkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-ccccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 32...
+Generated 104691 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 32
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ------p-c----------------k---c-p-----ccc-k-------p------kk--c--------c--
+gangster g02: -----cc-c-c-k------------c--kkkkk----cc-c--k------c-----k---c-----------
+gangster g03: -p----p--p-----c-k-p-----c--k-p-c---k-p-c---p------c-pp--c-k---cc-------
+gangster g04: -pp---p---k-k----c--c-c---p---p-k-k--k-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: pp-c--c--p-p-p-k--p-k-k---pp--pp-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--c-cc---cc-p--p-p-k-k-kk-k-k--ccc--k-k--ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-k-c-k-p-ppp--p--kk--pp-p-k--k-cc-k-pp-c-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: k--kk--k--cccc--p-pp-p-pp--cccc-kkk-k-p-k-cccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-kkk--kkkk---kkk-ppppp-k-cccccc-cccccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkk-pppppppppppppppppppppppppppppppp-kkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: pppppp-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-pppppppppppppppppppppppppppppppp
+gangster g12: cccccc-cccccccccccccccccccccccccccccccc-cccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 31...
+Generated 104727 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 31
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ------p--p-p-------------k--k-pp---p-cc----------p------kk--c--------c--
+gangster g02: ------p--p--k------------c---cc-c---p-p----k------c-----k---c-----------
+gangster g03: k--k--p-c------c-k-p-----c----p-k-----ppp---p------c-pp--c-k---cc-------
+gangster g04: -p----c-c-k-k----c--c-c---p---p-k-k--pp-c-cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p-c-c--p-k--p-k-k---pp-c-p-ppp--c-ccc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c-k-cc-p--p-p-k-k-kk-c-k--ccc--cc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: ppp--c-k-p-ppp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: -c-c-c-k--cccc--p-pp-p-pp--kk-ccccc-cc-k-ccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-kkkkkkkk-kk-ccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: pppppp-pppppppppppppppppppppppppppp-kk-kkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: cccccccc-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-ppppppppppppppppppppppppppppppp
+gangster g12: kkkkkkkk-ccccccccccccccccccccccccccccccc-ccccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 30...
+Generated 104763 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 30
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ---kk-c-ccc--------------k--k-pp-----c-k---------p------kk--c--------c--
+gangster g02: ---k---cc-k-k------------c---cc-c---kkk-p--k------c-----k---c-----------
+gangster g03: k--c--p--p-p---c-k-p-----c----p-k---k-p--k--p------c-pp--c-k---cc-------
+gangster g04: -p-----k--c-k----c--c-c---p---p-k-k---pp--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c-c-k--k--p-k--p-k-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -c-c-c-k--cc-p--p-p-k-k-kk-c-k--ccc--k-k-pppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: k----cc---kkkk--p--kk--pp-p-cc-k-cc-ccc-cc-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp---p--p-ppp--p-pp-p-pp--kk-ccccc-ccc-cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-cc-c-cccc---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: ppppppp--pppppppppppppppppppppppppppppp-kkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: ccc-c-pppp-kkkkkkkkkkkkkkkkkkkkkkkkkkk-kk-pppppppppppppppppppppppppppppp
+gangster g12: kkkkkkkkkk-ccccccccccccccccccccccccc-cccc-cccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 29...
+Generated 104799 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 29
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ---------ppp--p----------k--k-pp------pp--p------p------kk--c--------c--
+gangster g02: -------k-p-cc-k--k-------c---cc-c---ppp-p--k------c-----k---c-----------
+gangster g03: k--k--p--p-p-p-k-c-p-----c----p-k---k-p---c-p------c-pp--c-k---cc-------
+gangster g04: -p-----k--c-pp------c-c---p---p-k-k-kk-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p-c-c-k--c--p-k-k---pp-c-p-ppp-k-k--c-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-p-c--ppp--p-p-k-k-kk-c-k--ccc--k-k-pppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-cc---c-k---p--kk--pp-p-cc-k-cc-cc--cc-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--cc-p-kkkk--p-pp-p-pp--kk-ccccc-ccc-cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--k-kk---kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: pppppppp-p-ccc-ppppppppppppppppppppp-cc-kkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: kkkkkkkkkkkk-p-kkkkkkkkkkkkkkkkkkkkkkkkkkk-ppppppppppppppppppppppppppppp
+gangster g12: cccccccccccc-ccccccccccccccccccccccc-ccccc-ccccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 28...
+Generated 104835 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 28
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ------p--p-p-------------k--k-pp------p----k-----p------kk--c--------c--
+gangster g02: ------p---c-k------------c---cc-c----cc----c------c-----k---c-----------
+gangster g03: k--c--p----p-p-k-k-p-----c----p-k-----p--cc-p------c-pp--c-k---cc-------
+gangster g04: -p----p-p-c-k----c--c-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: k--kk-c-c-cc-p-c--p-k-k---pp-c-p-ppp-k-k--ppp--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -p-c--ccc-k--p--p-p-k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: ppp--cc-c-k-pp--p--kk--pp-p-cc-k-cc-kk-kkk-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: k-kk-c-k-p-cccc-p-pp-p-pp--kk-ccccc-kk--cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: -c-k-c-p-p-kkkk--kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: cccccc-k-pppp-pppppppppppppppppppppppppppp-kkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: pppppp-kkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkkkkk-pppppppppppppppppppppppppppp
+gangster g12: kkkkkkkk-ccccc-cccccccccccccccccccccccccccc-cccccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 27...
+Generated 104871 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 27
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ------p-c-----p-p-p------c-kkk-p---k-k-k----p----p------kk------c----c--
+gangster g02: ------c-c-c-k--k---------k---cc-k---k-p----k-k----c-----k---c-----------
+gangster g03: k--k--c--p------p--p-----c----pp----k-c---p-p------c-pp--c-cc--cc-------
+gangster g04: -p--------k-k-------c-c---p---p-k-k---p---cc-kk-p-kk-p---c-p--cc-k-p-p--
+gangster g05: -p-c--p--p-p-p---c--k-k--k-p-c-k-ppp-kkk-ccccc-ppp-pppp--c-p--pp-k-k--k-
+gangster g06: k--kk-p---cc-p--p-p-k-k-k-p---p-ccc--cc-c-ppp--c-kkk-ccc-k-p--ppp--k-pp-
+gangster g07: -c-c-c-k-p-ppp---k-kk--pp--ccc--ccc-kk-kkk-kk--ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc-cc-pp-p-pp-p-k-ccccc-kk--ccc-cc-cc-cccccc--p-kkkkk-cc-ppp
+gangster g09: k-kk-c-k--kkkk--kkkk-ppppp-kkkkkkkk-cccccc-pp-kkkkkk-kkk--p-ppppp-ccc-kk
+gangster g10: pppppppppppppp-ppppppppppppppppppppppppppp-kk-ccccccccccccc-cccccccccccc
+gangster g11: kkkkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkkk-cc-kkkkkkkkkkkkkkkkkkkkkkkkkk-kkkkkk
+gangster g12: cccccccccccccccc-ccccccccccccccccccc-ccccccc-ppppppppppppppppppppppppppp
+
+
+
+
+
+
+Now looking for solution with cost 26...
+Generated 104907 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 26
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp------p-----p----p------kk--c--------c--
+gangster g02: ------c-c-c-k---p--p-----c---cc-c----cc--k---c----c-----k---c-----------
+gangster g03: k--k--p--p------p-pp-----c----p-k-----p---c-p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k-----p-c-c---p---p-k-k--c-k---k--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p--p-p-k-k---pp-c-p-ppp-k-k--ppp--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p----c-k-k-kk-c-k--ccc-ccc-cccc-k-c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp-c-c--k--pp-p-cc-k-cc-kk-kk-pppp-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc-k-kkk-p-pp--kk-ccccc-kk--cccccc-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk-p-kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: ppppppppppppppp-pppppppppppppppppppppppppp-kkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: cccccccccccccccccc-kkkkkkkkkkkkkkkkkkkkkkkkkk-pppppppppppppppppppppppppp
+gangster g12: kkkkkkkkkkkkkkkkkk-cccccccccccccccccccccccccc-cccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 25...
+Generated 104943 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 25
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c-------p--p-----k--k-pp------p----------p------kk--c--------c--
+gangster g02: ------c-c-c-k---p-p-c----c---cc-c----cc----k------c-----k---c-----------
+gangster g03: k--k--p--p------p-p-k----c----p-k-----p--k--p------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k-----p-k-c---p---p-k-k--c-k--cc--k-p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p--p---c-k---pp-c-p-ppp-k-k-cc-p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: k--kk-c---cc-p------k-k-kk-c-k--ccc-ccc-c-ppp--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp---c-kk--pp-p-cc-k-cc-kk-kk-pppppppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc-c-k-p-p-pp--kk-ccccc-kk--ccccccccc-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk-k-kkk-ppppp-kkkkkkkk-k-cccc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: pppppppppppppppp-ppppppppppppppppppppppppp-kkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: kkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkkkkkk-ppppppppppppppppppppppppp
+gangster g12: cccccccccccccccccccc-ccccccccccccccccccccccccc-ccccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 24...
+Generated 104979 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 24
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ---------p------------c--k--k-pp-----k-k-------c-p-p----kk--c--------c--
+gangster g02: ------p---c-k----k----k--c---cc-c---ccc----k------c-----k---c-----------
+gangster g03: k--k--p--p-----k-c-p--k--c----p-k-p-p-pp-k--p--cc--c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----k--c-k---p---p-k-k--c-k--cc-----kkk-p---c-p--pp-k-p-p--
+gangster g05: -p-c---k-p-p-p-c--p-k-----pp-c-p-ppp-k-k-cc-p--c-p--ppp--c-p--ppp--k--k-
+gangster g06: k--kk--k--cc-p--p-p-k-c-kk-c-k--ccc--cccc-ppp--pp-kk-ccc-k-p--ccc--k-pp-
+gangster g07: -c-c-c-k-p-ppp--p--kk--pp-p-cc-k-cc-k-p-cccccc-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--cc-c-cccc--p-pp-p-pp--kk-ccccc-kk--k-ppppppp-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-cc-c-kkkk---kkk-ppppp-kkkkkkkk-k-c-cc-kkkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: ppppppppp-pppppppppppppppppppppppp-p-pp-pp-kkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: kkkkkkkkkkkkkkkkk-kkkk-kkkkkkkkkkkkkkkkkkkkkkkk-pppppppppppppppppppppppp
+gangster g12: cccccccccccccccccccccc-cccccccccccccccccccccccc-cccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 23...
+Generated 105015 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 23
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c--------------------k-p-----------k---c-p-p----kk--c--------c--
+gangster g02: -p----c-c-c-k----------------c-p------p----k----p-c-----k---c-----------
+gangster g03: k--k--p--p-p-----k-p--c--c----p-k--p--p-----p--cc--c-pp--c-k---cc-------
+gangster g04: k-----p---k-k----c--c-k-p-pp---kk-k-kk-k---c----p-kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p-k--p-k--pp-p-k-p-ccc-kk-k-cc-p--ppp--ppp--c-p--ppp--k--k-
+gangster g06: ---kk-c---cc-p--p-p-k-k-cc-cccc-ccc--cc-c-ppp---kkkk-ccc-k-p--ccc--k-pp-
+gangster g07: cc-c-c-k-p-ppp--p--kk--p-k-kk-p-ccc--cc-cccccc-p-kkk-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc--p-pp-p--kk-kkkkkkkkkkk-kkk-kkkk-c-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk-c-kkkkkkkkkkk-ccc-ppppppppppppppppppp-kkk--p-kkkkk-ccc-kk
+gangster g10: kkkkkkkkkkkkkkkkkkkk-pppppp-kkkkkkk-kkkkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: ppppppppppp-ppppppppppppppppppppppp-ccccccc-kkkk-ppppppppppppppppppppppp
+gangster g12: -ccccccccccccccccccccccc-ccccccccccccccccccccccc-ccccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 22...
+Generated 105051 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 22
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -ccc----cc-------------ppppp-cc-kk-p--p----c---pp-kkk---kk--c-k-c----pp-
+gangster g02: pp-k--c--p--k----k-c--c--cc-kk-kk-k---p----k-kk-pp--c---k---c--c---kk-k-
+gangster g03: -p-k--c--p-p-p-c-c-p--k--c--k-p-k---k-c----kk--pp--pppp--c-pp--kk--k--k-
+gangster g04: pp----p-c-c-k----k--c-k---p-k-p-ccc--c-k---c--c-pppp-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p---k-k--k--p-k-p--kk--cccc-p-kk-k-cc-cc-kkkkk-pp--c-p--cc---c--k-
+gangster g06: k--kk-p---cc-p--p-p-k--p---k--k-ccc--cc-c-ppp--k-ppp-ccc-k-p--p-c--c-cc-
+gangster g07: k--c-c-k-p-ppp--p--kk--pp--k-kkk-cc-kk-kkk-kkk-c-p-c-kkkkk---pppp-c-cc--
+gangster g08: --pp-c-k--cccc--p-pp-p--kk-kk-pp-cc-kk--ccc-p--c-kkk-ccc-pp-ppppp-c--ppp
+gangster g09: k-p--c-k--kkkk---kkk-p-pppppppppppppppppppppp-k-kkkk-kkk--p--kkkk-ccc--k
+gangster g10: --k-ppppppppppppppppppp-p-p-ccccc-kk-kkkkkkkkkk-ccc-ppppp-p-kk-ppppppppp
+gangster g11: kkkkkkkkkkkk-kkkk-kkkkkkkk-c-k-kkkk-ccccccc-pppp--cc-kkkkkkkkkkkkkkk-k-k
+gangster g12: cc--ccccc-ccccccccc-cccccc-ccc-p-p-ccccccccccc-cc-cccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 21...
+Generated 105087 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 21
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ---k--c-c----------------c-k--pp---p-k-----k--k-kkkk----kk--c--------c--
+gangster g02: ---c--c--p--k------------k---cc-c-----p----k-----kk-c---k---c-----------
+gangster g03: k--c--c--p-p-----k-p-----c----p-k---k-p-----p---p--k-pp--c-k---cc-------
+gangster g04: -p----p-c-k--p---c--c-c---p-k-p-k-k-kk-k---c----c-cc-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p---cc-p-c--p-k-k---p-cc-p-pp-kk-k-cc-p--cccc-ppp--c-p--ppp--k--k-
+gangster g06: k--kk-p--p-ppp--p-p-k-k-kk-p-k--ccc--cc-c-ppp--pp-kk-ccc-k-p--ccc--k-pp-
+gangster g07: -c---c-k--c-kk--p--kk--pp-p-k--k-cc--cc-cccccc-pp-cc-kkkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc-pp-pp-p-pp--cccccccc-kk-kkk-kkk-c-ppp-ccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk-k-kkk-ppppp-kkkkkkkkk-ppppppppppppppp-kkk--p-kkkkk-ccc-kk
+gangster g10: ppppppppppppppp-ppppppppppppppppppppp-kkkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkk
+gangster g11: kkkkkkkkkkkkk-kkkkkkkkkkkkkkkkkkkkk-ccccccc-kkkk-p-ppppppppppppppppppppp
+gangster g12: ccc-cc-ccccccccccccccccccccc-ccccccccccccccccccc-p-ccccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 20...
+Generated 105123 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 20
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -------------------------k--k-p-k----cc----k---c--ccccc-kk--c--------c--
+gangster g02: ------p---c-k------------c---cc-k-----p----k----ccc-c---k---c-----------
+gangster g03: k--c--p--p-----c-k-p-----c----pp-p-p--p-----p--kk--p-pp--c-c---cc-------
+gangster g04: -p----p---k-k----c--c-k---p---pp--k-kk-k---c-----p-c-p---c-p--pp-k-k-p--
+gangster g05: -p-c---k-p-p-p-k--p-k-k---pp-kk-c-p-kk-k-cc-p--c-kkk-pp--c-p--ppp--k--k-
+gangster g06: k--kk--k--cc-p--p-p-k-c-kk-k-c--ccc--cc-c-ppp--pp-kkkk-c-k-p--ccc--p-pp-
+gangster g07: -c-k-c-k-p-ppp--p--kk--pp-p-k--k-cc--cc-cccccc-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp--cc-cccccc---kkk-p-pp--kkkkkkkk-kk-kkk-kkkk-c-cc-ccc--p-ppppp-cc-ppp
+gangster g09: k-kk-cc-c-ccccc-pppp-ppppp-cccccccccc-pppppppppppp-k-kkk--p-kkkkk-ccc-kk
+gangster g10: ppppppppppppppppp-pppppppppppppppppppp-ccccccccc-kkk-cccccc-cccccccccccc
+gangster g11: kkkkkkkkkkkkkk-cccccccccccccccccccc-ccccccc-kkk-ppppp-kkkkkkkkkkkkkkkkkk
+gangster g12: ccccccccc-kkkkkkkkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkkkkk-pppppppppppppppppppp
+
+
+
+
+
+
+Now looking for solution with cost 19...
+Generated 105159 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 19
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ---k----c-------------c--k--k-pp-p---k-----k-----p-k----kk--c------c-c--
+gangster g02: ---c--c--p--c--k---p--k--c---cccc-----p----k------k-----k---c------k----
+gangster g03: k--c--p--p-p-p-k-k-p--k--c----p-cc-p---k----p--c---k-pp--c-k---cc--k----
+gangster g04: -p----p-c-c-k----c--c-k---p---p-ccc-kk-k---c-----kk-pp---c-p--pp-k-k-p--
+gangster g05: -p-c--p---k-k--c--p-k-----pp-c-p--p-kk-k-cc-p--ppp-pppp--c-p--ppp--p--k-
+gangster g06: k--kk-c---cc-p--p-p-k---kk-k-k-cccc--cc-c-ppp--cc-cccccc-k-p--ccc----pp-
+gangster g07: -c---c-k-p-ppp--p--kk--pp-p-k--k-cc--cc-cccccc-ppppp-kkkkk---kkkk-c-ccc-
+gangster g08: ppp--c-k--cccc--p-pp-p-pp--cccc-k-k-kkkkkk-kkkk-p-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk---kkk-ppppp-kkkkkkkkkk-pppppppppppppp-kkk--p-kkkkk-ccc-kk
+gangster g10: ppppppppppppppppppp-ppppppppppppppppppp-kkkkkkkkkkkkkkkkkkk-kkkkkkk-kkkk
+gangster g11: kkkkkkkkkkkkkkk-kkkkkk-kkkkkkkkkkkk-ccccccc-kkkkkkkk-ppppppppppppppppppp
+gangster g12: ccc-cccccccc-cccccccccccccccccc-k-cccccccccccccccccc-ccccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 18...
+Generated 105195 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 18
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c----------------k--k-pp-----c-k--cccc---p-k-c--kk--c--------c--
+gangster g02: ------p-c-c-k------------c---cc-c-k--k----kk------c--p--k---c-----------
+gangster g03: -p-c--p--p-----c-c-------c----p-k-c---p---p-p------c-pp--c-k---cc-------
+gangster g04: k-----p---k-k----k--k-c---p---p-k--p--p-p--k--k-p-k-pp---c-p--pp-k-p-p--
+gangster g05: -c-c--c--p-p-p-k--p-c-k---pp-c-p-pp-kk-k-k--p--ppp-pppp--c-p--ppp--k--k-
+gangster g06: -pp-k--k--cc-p-c-k-kk-k-kk-c-k--ccc-kk-kk--kk--c-kkk-ccc-k-p--ccc--k-pp-
+gangster g07: k--k-c-k-p-ppp--p-pp-p-pp-p-cc-k-cc-k-c-cc-pp--ppppp-kkkkk---kkkk-ccccc-
+gangster g08: k-kk-c-k--cccc--p-pp-p-pp--kk-ccccc-kkkkkk-kkk-cc-cccccc--p-ppppp-cc-ppp
+gangster g09: kkkk-cc---kkkk--pppppppppp-kkkkkkkk-ccc-cccc-kkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: pp-kkkkkkkkkkkkkkkkkk-pppppppppppppppppp-ppppppppppp-kkkkkk-kkkkkkkkkkkk
+gangster g11: ppppppppppppppppp-kkkkkkkkkkkkkkkkkk-cccccc-kkkkkkkkk-pppppppppppppppppp
+gangster g12: ccccccccccccccc-cccccccccccccccccc-cccccccccccccccccc-cccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 17...
+Generated 105231 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 17
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -p------c----------------c-c-k-kk----------k---c-p----c-kk--c--------c--
+gangster g02: k-----c-c-c-k---p--------k---c-p------p----k------k--pp-k---c-----------
+gangster g03: k--k--p--p------p-pp-----c----pp----k-p--k--p--c---k-pp--c-k---cc-------
+gangster g04: k-----p---k-k-----p-k-c---p---p-k-k-kk-k---c-----kkk-p---c-p--pp-k-p-p--
+gangster g05: -p-c--p--p-p-p--p-p-c-k--k--k-p-ccc-kk-k-cc-p---pp-pppp--c-p--ppp--k--k-
+gangster g06: ---kk-c---cc-p--p-kkk-k-k-pp-c--ccc-kk-kk-ppp--ppppp-ccc-k-p--ccc--k-pp-
+gangster g07: cc-c-c-k-p-ppp---cc-k--pp-p-ccc-ccc-ccc-cccccc-pppppp-kkkk---kkkk-ccccc-
+gangster g08: ppp--c-k--cccc-k-kkk-p-pp--kk-cc-pppppppppppppppp-cccccc--p-ppppp-cc-ppp
+gangster g09: k-kk-c-k--kkkk-c-ppp-ppppp-kkkkkkkk-ccc-ccc-kkk-c-cc-kkk--p-kkkkk-ccc-kk
+gangster g10: pppppppppppppppp-k-ppppppppppppppppp-cccc--kkkkkkkkk-kkkkkk-kkkkkkkkkkkk
+gangster g11: -kkkkkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkk-kkkkkkkkkkkkkkkkk-ppppppppppppppppp
+gangster g12: -ccccccccccccccccc-ccccccccccccccccc-ccccccccccccccccc-ccccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 16...
+Generated 105267 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 16
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c------------p---k--k-pp-----ccc--cccc---p-k----kk--c--------c--
+gangster g02: ---c--c-c-c-k-------k----c---cc-c----cc-c--k------c---p-k---c-----------
+gangster g03: k--k--p--p-----c-k--k----c----p-k-k---p--c-kk------c-pp--c-k---cc-------
+gangster g04: -p----p---k-k----c--k-c---p---p-k---cc-k---k--k-p-cc-p-c-c-p--pp-k-p-p--
+gangster g05: -p--p-p--p-p-p-k--pp--k---pp-c-p-ppp-cc---p-p--ppp-ppppp-c-p--ppp--k--k-
+gangster g06: -c-kk-c---cc-p--p-pp--k-kk-c-k--ccc-kk-k--p-p--cc-k-cccc-k-p--ccc--k-pp-
+gangster g07: k--c-c-k-p-ppp--p-p-cc-pp-p-cc-k-cc-kkkkkk-pp--ppppppp-kkk---kkkk-ccccc-
+gangster g08: k-kk-c-k--cccc--p--kkk-ppp-kk-ccccc-kk--cccc-k-c-kkk-ccc--p-ppppp-cc-ppp
+gangster g09: cccccc-k--kkkk---kkk-ppppp-kkkkkkkk-k-ccccc-kkkkkkkk-kkk--p-kkkkk-ccc-kk
+gangster g10: ppp-kkkkkkkkkkkkkkkk-pppp-pppppppppppppppp-ppppppppp-kkkkkk-kkkkkkkkkkkk
+gangster g11: kkkk-pppppppppppppppp-kkkkkkkkkkkkkk-k-kkkkkkkkkkkkkkkk-pppppppppppppppp
+gangster g12: pppp-cccccccccccccccc-ccccccccccccccc-p-ccccccccccccccc-cccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 15...
+Generated 105303 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 15
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ---------p-------c----------k-p-k----cc----------p-------c----p---------
+gangster g02: k-----c-c-c-k---p---c----k---cc-k---kk--c--k-----kk---------------------
+gangster g03: k--c--p-c-------p--p-----c-k--p-c-k---p-c---p--c---p-cc--c-----p--c---k-
+gangster g04: ------p-c-k-k-----p-k-c----p--pp-pp---p---cc----c-cc-p-c-c--k--cc--k-p--
+gangster g05: -p-c--p--p-p-p--p-p---k-cc-k-c-p-ppp-c-k-cc-p-k-p-kk-pp-kk--c-ccc--k-cc-
+gangster g06: -c-kk-c---cc-p--p--kk-k-kk-c-k--ccc--k-k--ppp--pppppppp-kk--c-ppp-cc-pp-
+gangster g07: ppp--c-k-p-ppp---kk-k--pp-p-cc-k-cc-ccc-cc-kkk-c-kkk-kkkkk-p-kkkkk-p-pp-
+gangster g08: k-kk-c-k--cccc-k-kkk-p-pp-p-k-ccccc-kk-kkk-kkkkkkkkk-kkkkkkkkkkkkk-ccc-p
+gangster g09: kkkk-c-k--kkkk-c-ppp-pppppp-kkkkkkk-k-cccccccc-pppppppppp-pp-kkkk-ccc-kk
+gangster g10: -ppppppppppppppp--ppppppppppppppp-kkkkkkkkkkkkkkk-ccccccc-ppppppp-kkkkkk
+gangster g11: pp-kkkkkkkkkkkkkkk-kkkkkkkkkkkkkkk-ppppppppppppppp-kkkkk-ppppppppppppppp
+gangster g12: cccccccc-ccccccccccccccc-ccccccccccccccc-ccccccccccccccc-ccccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 14...
+Generated 105339 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 14
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ---------p---------------c-kk-pp---p--p--k-k----pp------kk--c--------c--
+gangster g02: ------p---ccc--c----c----k---cc-c----k--c-c-------c-----k-p-c-----------
+gangster g03: k--kk-p----p-p-k----k----c----p-k-----pp-pp-p--c---c-pp--c-p---cc-------
+gangster g04: -p---cc-c-c-k----c--k-k-p-p---p-k-k--cc---cc------kk-p---c-p--pp-k-p-p--
+gangster g05: -p-c-cc-c-k-k---p-p----p--pp-c-p-pp-kk-k-cc-p-k--kkk-ccc-c-p--ppp--k--k-
+gangster g06: k--k-c-k--c-kk---k-kk-c-kk-c-k--ccc-kk-k--ppp--ppp-pppp-kkkk--ccc--k-pp-
+gangster g07: -c-c---k-p-ccc--p-pp-p-pp--ccc-k-cc-cccccc-kkk-ppppp-kkkkk---kkkk-ccccc-
+gangster g08: ppp----k-p-ppp--p-pp-pppp--kk-ccccc--cc-cccccc-cc-cccccc-k--ppppp-cc-ppp
+gangster g09: k-kk--pppppppp---kkk--kkkkkkkkkkkkk-k-cccc-kkkkkkkkk-kkk-pp-kkkkk-ccc-kk
+gangster g10: kkkkkkkkk-kkkkkkkkkkkkk--pppppppppppppp-p-kkkkkkkkkkkkkk-c--kkkkkkkkkkkk
+gangster g11: ppppppp--kkk-pppppppppppppp-kkkkkkkkkkkkkk-pppppppppppppp-pppppppppppppp
+gangster g12: cccccccccccc-cccccccccccccc-cccccccccc-kk--cccccccccccccc-cccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 13...
+Generated 105375 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 13
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ------p-c----------------c--kkkkk----k-p---ccc---p-------k-----------c--
+gangster g02: k-p---c-c-c-k-k-p-----k--c-c--pp----k-p----k-k---p--------p-------------
+gangster g03: k-k---c--p------p--p--k--k-k--ppppp---p-c-ppp-p----p-pp--c-----cc-------
+gangster g04: -pp-------k-k-----p-c-k-p--p--p-k--p--p-c--k-kk-p-cc-p---c-p--pp-k-p-p--
+gangster g05: k--c--p--p-p-p--p-p-k-p-k----cc-c-k--cc-p--kkk-pp-kk-ccc-k--c-ppp--k--k-
+gangster g06: k--kk-p---cc-p--p-p-k-c--k-k-cc--cc-kk-k-cccc--cc-cccccc-cc-c-ccc--k-pp-
+gangster g07: -p-k-c-k-p-ppp---k-p-p-pp-p-ccc-ccc-kk-k-cc-k--pppppppp-k-pp-kkkk-ccccc-
+gangster g08: pp-k-c-k--cccc-ccc-kkk-pp-p-kk-cccc--cc-ccc-p--c-kkk-kkkkkk-kkkkk-cc-ppp
+gangster g09: -ccc-c-k--kkkk-k-kkk-p-p-pp-k-pp-ppppp-kkk-kk-kkkkkk-kkkk-ppppppp-ccc-kk
+gangster g10: -kkkkkkkkkkkkk-kkkkkk--kkkkkkkkkkkk-cccc-pppp-kkkkkkkkkkkk-kkkkkkkkkkkkk
+gangster g11: cc-ppppppppppppp-ppppppppppppp-kkkkkkkkkkkk-pp-ppppppppppp-ppppppppppppp
+gangster g12: pp-ccccccccccccc-ccccccccccccc-ccccccccccccc-ccccccccccccc-ccccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 12...
+Generated 105411 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 12
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ---------p------------------cccc-p---k-k----p----p-pp----c-----------c--
+gangster g02: ------p-c-c-k------p-----c-k-cc-k-k--cc----k-----p----p---p-------------
+gangster g03: k--k--p--p---p-k-k--c----k-c--pp-pp---c--k--p-k----k-pp---pp---cc-------
+gangster g04: k-----p---k-k----c--c-c----p--pp-c--k-p----k--k-p-cc-p---c-p--pp-k-p-p--
+gangster g05: -p-c---k-p-p-p-c--p-k-k--c-k-c--ccc-kk-k--ppp--pp-cc-p-c-c--c-ppp--k--k-
+gangster g06: -p-kk--k--cc-p--p-p-k-k-kk-p--p-ccc-kk-kk-cc-k-cc-kk-ccc-k-cc-ccc--k-pp-
+gangster g07: -c-c-cc-c--pp-k-p--kk--pp-p-ppp-ccc-c-p-ccc-k-pppppppppppp-p-kkkk-ccccc-
+gangster g08: pppp-c-k--kkkk--p-pp-p-pp-p-kk-kkk-p-c--cccccccc-kk-ccc-kk-kkkkkk-cc-ppp
+gangster g09: kkkk-ccc--cccc-kkkkk-pppppp-kkkkkkk--ccccc-kkkkkkkkk-kkkk-ppppppp-ccc-kk
+gangster g10: k-kkkkkkkkkkkk--ppppppppppp-kkkkk-pppppppppppp-ppppp-kkkkk--kkkkkkkkkkkk
+gangster g11: ppp-pppppppppppp-kkkkkkkkkkkk--pp-kkkkkkkkkkkk-kkkkkkkkkkkk-pppppppppppp
+gangster g12: ccccccc-cccccccccccc-cccccccccccc-cccccccccccc-cccccccccccc-cccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 11...
+Generated 105447 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 11
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --------c-------p------------cccc--------------cc-c-p----k------c-p-----
+gangster g02: k-----p--p--c--c----k----c--kkk-k-----p----k----pp----p----p------------
+gangster g03: k-----p--p-p-p-k----k-k-cc-kk-pp---p--p-----p--cc--p-pp--k-p---c------k-
+gangster g04: --p---p-c-c-k----c--k-c-p--k--pp-ppp-cc-c-cc----pp-c-p---c--c-pp-p-k-p--
+gangster g05: -p-c--c---k-k---p-p-c--p-k-p--p-ccc-ccc-ccc-p--pp-kk-p-c-c--c-ppp--p--k-
+gangster g06: -p-c-c-k--cc-p---k-kk--p-k-c-k--ccc-kk-k--ppp--p-ppp-ccc-c--c-ccc--k-pp-
+gangster g07: cc-k-c-k-p-ppp--p-pp-p-pp-p-k--k-cc-kk-k-ccccc-p--ccccc-k-ppppppp-ccccc-
+gangster g08: pp-k-cc-p-cccc---kkk--kkk-p-ccc-k-kkkk-kkk-kkkkk-kkk-kkkk-ppppppp-cc-ppp
+gangster g09: k-kkkk-k--kkkk---kkk-pppppp--c-kkkk-cccccc-kkkkkkkkk-kkkkk-kkkkkkk-ppppp
+gangster g10: kkkkk-kkkkkkkkkkk-ppppp-ppppppppppp-kkkkkkkkkkk-ppppppppppp--kkkkkkkkkkk
+gangster g11: pppppppp-ppppppppppp-kk-kkkkkkkkkkk-ppppppppppp-kkkkkkkkkkk-kkkkk-cccc-k
+gangster g12: -ccccccccccc-ccccccccccc-ccccccccccc-ccccccccccc-ccccccccccc-ccccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 10...
+Generated 105483 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 10
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ------p-c---------p-------p---pp------p--c-----c-pppp----k--------p-----
+gangster g02: ------p-c-c-k---p---------pp-cc-c----cc-c--k----ccc-p-p------c----------
+gangster g03: k----cc--p-----c-c-p--c--c-p--p-k---p-p-kk--p--pp--p-pp--k-p-k-cc-----k-
+gangster g04: k-p--pp---k-k----c--c-k-p-p-k-p-k-k--p-k--cc-----p-k-p---c--c-pp-p-k-p--
+gangster g05: -p-c--c--p-p-p---k--k-k--c--cc-p-ppp-ccc-cc-p--cc-cc-p-c-c--c-ppp--p--k-
+gangster g06: -p-c--c---cc-p--p-p-k--p-k-k-k--ccc-k-p-c-ppp--c--cc-ccc-c--k-ccc--k-pp-
+gangster g07: -c-k-c-k-p-ppp--p--kk--pp--ccc-k-cc-kk-k--cccc-ppp-cccc-kk-pppppp-ccccc-
+gangster g08: pp-k-c-k--cccc--p-pp-p--kk-kk-ccccc-kkkkkk-kkkk-pppp-kkkk-ppppppp-cc-ppp
+gangster g09: k-kkkk-k--kkkk-kkkkk-ppppp-kkkkkkkk-cccccc-kkkkk-kkk-kkkk-p-kkkkkk-ppppp
+gangster g10: kkkkk-pppppppppp-pppppppppp-pppppppp-k-k--kkkkkkkkkk-ppppppp--kkkkkkkkkk
+gangster g11: ppppp-kkkkkkkkkk-kkkkkkkkkk-kkkkkkkkkk-pppppppppp-kkkkkkkkkk-kkkk-cccc-k
+gangster g12: cccccc-cccccccccc-cccccccccc-cccccccccc-ccccccc-kkk-ccccccccc-cccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 9...
+Generated 105519 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 9
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ---------p--------p------c-kk-p-c----k------p--p-kkk--c--k----------cc--
+gangster g02: k-----c--p--c----c-------ppp-kkkk---k-p---c------kk-p-p-------p---------
+gangster g03: k--c--p--p-p-p---k----c--c--c-p-c-p---p-ccc-p--c---c-pp--k-p--ccc-------
+gangster g04: -p----p-c-k-k----k--c-c----kk--p-p-p-pppp--k------kk-p---c--c-pp-k-p-p--
+gangster g05: -c-k--p-c-c-k--k-k--k-k--k--ppp-ccc--cc-k-ppp--cc-cccc-c-c--c-ccc--k--k-
+gangster g06: k--kk-c---cc-p-c---kk-k-kk-c-c-kkkk-kk-k-ccc-c-kk-c-cccc-c--kkkkk-kk-cc-
+gangster g07: -pp--c-k--cccc--p-kkk-ppp-pp-ccc-cc-kk-k-k-kkk-ppp-ppp--kk-pppppp-cc-pp-
+gangster g08: k-kk-c-k--kkkk--p-pp-p-pp-p--cccccc--cc-ccccc-k-pppp-kkkk-ppppppp-cc-ppp
+gangster g09: cccc-c-k-ppppp--p-ppppppp-p--kkkk-k-ccccc--kkkkkkkkk-kkkk-p-kkkkkk-kkkkk
+gangster g10: ppppppppp-kkkkkkk-kkkkkkkkk-k-ppppppp--kkkkkkkk-pppp-ppppppp---ppppppppp
+gangster g11: -kkkkkkkkk-ppppppppp-p-cccccccc-kkkkkkkk-ppppppppp-kkkkkkkkk-kkkk-ccc-kk
+gangster g12: pp-ccccccccc-ccccccccc-ppp-kkk-p-ccccccccc-ccccccccc-ccccccccc-ccccccccc
+
+
+
+
+
+
+Now looking for solution with cost 8...
+Generated 105555 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 8
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -----------c----p----p-------c-p------p---ccc--c-kkk-----k-----c----cc--
+gangster g02: ---c--c--p--k---p---c----c-k--pp-----cc---cc-c--k-c--pp-----c-pp--------
+gangster g03: -p-c--p--p-p-p--p-p-k----k-p--p-k---k-c---c-p--c---c-pp--k-p-k-cc-------
+gangster g04: -p----p-c-c-k-----p-k-c----c--p-k-k-ccccc--k-c---p-ppp---c--c-pp-k-p-p--
+gangster g05: cc-p--c-c-c-k-----c---k--c-kk-p-ccc-kk-k-c-kk--ppp--p-cc-c-p-pppp--k--k-
+gangster g06: k--kk-p--p-ppp-k--pp--k-kk-c-cc-ccc---ppppppp--pp-kk-ccc-c----ccc-kk-cc-
+gangster g07: k--k-c-k--k-pp-c-c-k-p-pp-p-ccccccc-cc-k--ppp---ccccccc-kk---kkkk-cc-pp-
+gangster g08: k-kk-c-k--kkkk---kkkkk-pp-p-kkkk-ppp-k-kkk-kkkk-pppp-kkkk-ppppppp-cc-ppp
+gangster g09: kkkk-c-k-ccccc---k-p-pppppp-kkkkkkk-kk-kkkkk-kkk-kkkkkkkk-p-kkkkkk-kkkkk
+gangster g10: ppp-kkkkkkkk-kkkkkkkk-pppppppp-pppppppp-cc--kkkkkkkk-pppppppp---pppppppp
+gangster g11: ppp-pppppppp-pppppppp-kkkkkkkk-kkkkkkkk-cc--pppppppp-kkkkkkkk-kkk-ccc-kk
+gangster g12: -cccccccc-cccccccc-cccccccc-cccccccc-cccccccc-ccc-cccc-cccccccc-cccccccc
+
+
+
+
+
+
+Now looking for solution with cost 7...
+Generated 105591 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 7
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: k-----c---c----------p-p-ppp-c-p-p---cc----ccc-c-kk-c-p--c--k--cc----c--
+gangster g02: k-----p---c-k----c-p--c--c---c-kk-c-ppp-c--k-p--c-c-pp-c----c--c-k------
+gangster g03: --p---p----p---k-k-p--k--k----p-ccc-c--kkk--p-k-c--pppp--c--c--cc-------
+gangster g04: --p---p-c-k--p-----kk-k---p---p-k-k--k-k---k-kk-pp-k-p-c-c--c-ppp--p-p--
+gangster g05: -p-c----c-k-kk--p-p-c-k-kk-k--pp-ppp-cc-c-ppp--pp-kk-kkkkk----ppp--k--k-
+gangster g06: -p-c-cc-c-cc-p--p-p-k---p-p-kk-kkkkkk-p-c--kk---kkkk-cc-kk-p--c-cc-k-pp-
+gangster g07: cc-k-c-k-p-ppp--p-p-k--pp-p-kkk-ccc-kk-k-cc-p--ppppp-cc-kk-p-kkkk-ccccc-
+gangster g08: pp-k-c-k-p-ccc---kk-kk-pp--kkkkkkk-p--ppppppp-pppp-c-cccc-pp-kkkk-cc-ppp
+gangster g09: k-kkkk-k-ppppp-cc-kk-pp-cc-ccccccc--kk--kkkkkk-c-cccc-kkk-ppppppp-ccc-kk
+gangster g10: pp-ppppppp-kkkkkkk-k-ppppp-pppppp-p-kkkk-cc-kkkkk-cc-pppppp-pppp-ppppppp
+gangster g11: kkkkk-kkkkkkk-ppppppp--kkkkkk-cccccc-ccccccc---k-kkkkk-k-kkkkkkk-kkkkkkk
+gangster g12: -ccccccc-ccccccc-ccccccc-cccccc---k-cccc-ccccccc-ppp-kk--ccc-cc-k-cccccc
+
+
+
+
+
+
+Now looking for solution with cost 6...
+Generated 105627 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 6
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -------k-p---------------k-cccc-cc-p--p-----p--c-kkkk---cc------p--c-c--
+gangster g02: -p-----k--c-k--c-k-----p-c---cccc--p-cc----k-c--p-c-c-p-p-pp-------k----
+gangster g03: pp-k----c------k-k-p-p-p-c--p-p-k---p--k---pp--k---pppp--ppp---cc--k----
+gangster g04: k-----p---k-k----c-p-p-c---kk-p-k-k--cccc--k-k--kkkk-p---c--c-pp-k-k-p--
+gangster g05: pp-c--p--p-p-p-k--p-c-c----k-kkkkkk--ccc-k-kkk-cc-kk-p-c-c--c-pp-k----k-
+gangster g06: -c-kk-p---cc-p--p-p-k-k-kk-cccc-ccc-kk-kk-ppp-kk-p-p-ccc-c-p-ppppp-p-pp-
+gangster g07: -pp--cc-pp-ppp--p-p-k-k-p-p-kkkk-cc-kk--ccc-kkk--p-cccc-k-p--kkkk-ccccc-
+gangster g08: --kk-c-kk-kkkk--p--kk-k-p-pp-c-cccc-c-p-ccccc-pppppp-kkkk-c-kkkkk-cc-ppp
+gangster g09: cccc-cc-cccccc-pppppp-pppppp-ppp-pp-kkkk-ccccc-pp-cc-kkkkk-pppppp-pppppp
+gangster g10: k-kkkkkk-pppppp-c-kk-pppppp---ppppp-kk-kkkkkk-k-kkkk-kkkkkk-p-ccccc-c-kk
+gangster g11: k-pppppp-kkkkkk-kkkkkk-kkkkkk--p-kkk-pppppp-pp-pppp-pppp-k-kkkkkk-k-kkkk
+gangster g12: kk-cccccc-cccccc-cccccc-ccc-kk-kk-ccccc-cccc--cccccc-ccc-k-cccccc-cccccc
+
+
+
+
+
+
+Now looking for solution with cost 5...
+Generated 105663 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 5
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: ------cc-p-p-----k-----p-cc-kk-k-p-p-k-k-k--p-pp-kkkkk-c-c-p-kk-c-p-k-c-
+gangster g02: ---c-pp-pp--c-k--k--c-k-c-pp-k-kk-c---p-kk-k--k-ppp-pp-c--k-c-----cc--k-
+gangster g03: k--c--c--p-p-p-kk-kkkkk--c-kk-pp-ppp--p-c-c-p--kk--p-cc--c-p---c-kkk--kk
+gangster g04: k-----pp-p--k-------k-k-k-pp--p-kkk-kk--c--k-c--pppp-p-k-c--c--kk--k-p--
+gangster g05: -p-k--p-c-cc-p--p-c-k-c-p-p-kkkkk-k-ppppp-ppp--c-kkk-ppp-k--c-ppp-c--kk-
+gangster g06: -p-kk-p-c-c-kk--p-p-k-p--k--ccccc-p-cc-k-ccc-k-cc-kk-ccc-k-pp-ccc--p-pp-
+gangster g07: kkkk-cc-c-cccc--p-pp-p---k-c-cc-kkk-k-cc-cccc-cc-kkk-pp-kk--p-ppp-cc-c--
+gangster g08: ppp--c-k--k-pp-pp-pp-p-pp--c-ccccc--kk-k-cc-kkk-k-cc-kk-k-p-kkkkk--k-ppp
+gangster g09: pppp-c-k--kkkk-k-c-k-ppppp-k-ppp-cc-ccc-k--kk-k-cccc-kkkk-pp-ppp-k-ppppp
+gangster g10: k-kkkk--kkkkk--c-kkk---kkkk-p-k-ccc--cccc-kkkk-pp-c-c-p-ppp-kkkkk-ccc--k
+gangster g11: cc--p-kk--ppppp--pppp--pppp-cc-pp--kkkkk-ppppp-k-p-pp-kkkk-k-ppppp--cccc
+gangster g12: -ccccc-k-ccc-ccccc-ccccc-c-kk-p-cccc-cc-cc-ccc-ppp-cccc-cccc-ccccc-ccc--
+
+
+
+
+
+
+Now looking for solution with cost 4...
+Generated 105699 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 4
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: -c--p-p--p-p--k-p-----k--cc-kk-kkk-p--p---c-p-k-kkkk-pp-kk-p-c--p--c-cc-
+gangster g02: k-k-ccc--p-cc--c-c----c--k-k-cc-k-kkkk-----k--k-p-c-cccc--pp--pp-k-k--k-
+gangster g03: ccc---p--p-p-p-k-c--k-c--c--p-pp-c-pp-p-ccc-p--cc--k-pp-kk--c-kkk--k--kk
+gangster g04: k-p---c-c-c-pp----p-c-k---p-k-kkkk-cccc-c-cc-c--pp-p-k-c-c--c-ccc--p-p--
+gangster g05: k--c-c-k-p--k--k--p-k-pp-k-c-ccc-pp--cc-cc-kkk--p-cc-kk-kk--k-ccc--p--k-
+gangster g06: -p-c-c-k-kk-k----k-kk---pp-ccc-kk-c--ccc-pppp-pppp-ccc-c-c-pp-p---cc-pp-
+gangster g07: -ppp-pppp-c-cc--p-pp-p-pp-p-c-p-ccc-cc-k-kkkk--p-pppp-c--c-p-pppp--kkk--
+gangster g08: kk-kk-p-c-kkkk--p-pp-p-pppp-k-pp-cc-kkkk-cccc-cc-pppp-kkkk---kkkk-cc-ppp
+gangster g09: ---c-cccc-kkkk---kkkk--pp-pp-pp-ccc-kk-kkk-k-kkk-kkk-cc-c-p-pppp-kk-pppp
+gangster g10: pp-k--k---pppp-ppp-pppp-kkkk-cccc-k-kk-kk--ccc-kkkk-kkkk-pp--kkkk-ccc--k
+gangster g11: --kk---kk-cc-pp-kkkk-kkkk--kkkk-c-k--pppp-pppp-cc-kk-pppp-kkkk-pppp-cccc
+gangster g12: pp-kkk-k-ccc-cccc-cccc-ccc-p-k-pppp---cccc--kk-p-ccc-p-k-cccc--cccc-cc--
+
+
+
+
+
+
+Now looking for solution with cost 3...
+Generated 105735 clauses over 3456 variables. 
+Launching kissat...
+
+Solution found with cost 3
+
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --p---cc-ppp----p--k-p-pp-ppp-pp-p-p-ccc-cc-k-pp-kkk-ccc-c-cc--cc-c-cc--
+gangster g02: k--k--c--p-kk-p-p-kkk-c--ppp--ppp-p-ccc-c-kk-p--ppp-ppp-k-pp-ppp-c-pp-c-
+gangster g03: -p-k-pp--k-p-p--p-k-kkk--k-kk-kkk-k-c-p-ccc-p-k-k--p-kkk-c-p--ppp--cc-k-
+gangster g04: k-k---p-c-c-cc----p-k-k-p--kk-pp-kk-kk-k---c-kk-p-ccc--kkk-pp-ppp--k-p--
+gangster g05: -p-pp-p-pp-ppp---c--c-pp-ccc-pp-kkk--kkk-cc-p-k-kkk-c-k-cc-p-ppp-p-kk-k-
+gangster g06: pp-ccc-k-p--pp---pp---ppp-p-ccc-ccc-k-p-cc-k-c-k-ccc-ccc-k--cc-kkk-p--k-
+gangster g07: k--kkk-k--kkk--kkk-kk---ppp--cc-k-c-k-c-c-ppp--k-ppp-pp-kk--kkk-p----pp-
+gangster g08: k-kk-c-kk-ccc-kk-k-p-p--k-k-cc-kk-c-kk-k-k-kkk-ppp-kkk-pp---p-ccc-cc-ppp
+gangster g09: ppp---k-c-k-kk-pp-pp-p-kkk--kk-ccc-k-k-ppp-kkk-cc-cc-cc-k-p---kkk-cc-ppp
+gangster g10: -cc-k-pp-ccc-p-c-k-pp--p-k---kkk-ppp-c-kkk-ccc-c-kkk-pp--pp-kk-kk-p-cc-k
+gangster g11: cc-c-cc-c-k-kk-cc-p-c-k-cc-c-cc-ccc-ppp-k-ppp--ppp-ppp-c-kkk-kk--kkk-k-k
+gangster g12: -k-c-c-k--cc-cc--ccc-ccc-c-kkk-ccc-c-ccc--ccc-ccc-kk-kkk-cc-c-ccc-cc-ccc
+
+
+
+
+
+
+Now looking for solution with cost 2...
+Generated 105771 clauses over 3456 variables. 
+Launching kissat...
+
+Unsatisfiable. So the optimal solution was this one with cost 3:
+
+
+                      10        20        30        40        50        60        70  
+              123456789012345678901234567890123456789012345678901234567890123456789012
+
+gangster g01: --p---cc-ppp----p--k-p-pp-ppp-pp-p-p-ccc-cc-k-pp-kkk-ccc-c-cc--cc-c-cc--
+gangster g02: k--k--c--p-kk-p-p-kkk-c--ppp--ppp-p-ccc-c-kk-p--ppp-ppp-k-pp-ppp-c-pp-c-
+gangster g03: -p-k-pp--k-p-p--p-k-kkk--k-kk-kkk-k-c-p-ccc-p-k-k--p-kkk-c-p--ppp--cc-k-
+gangster g04: k-k---p-c-c-cc----p-k-k-p--kk-pp-kk-kk-k---c-kk-p-ccc--kkk-pp-ppp--k-p--
+gangster g05: -p-pp-p-pp-ppp---c--c-pp-ccc-pp-kkk--kkk-cc-p-k-kkk-c-k-cc-p-ppp-p-kk-k-
+gangster g06: pp-ccc-k-p--pp---pp---ppp-p-ccc-ccc-k-p-cc-k-c-k-ccc-ccc-k--cc-kkk-p--k-
+gangster g07: k--kkk-k--kkk--kkk-kk---ppp--cc-k-c-k-c-c-ppp--k-ppp-pp-kk--kkk-p----pp-
+gangster g08: k-kk-c-kk-ccc-kk-k-p-p--k-k-cc-kk-c-kk-k-k-kkk-ppp-kkk-pp---p-ccc-cc-ppp
+gangster g09: ppp---k-c-k-kk-pp-pp-p-kkk--kk-ccc-k-k-ppp-kkk-cc-cc-cc-k-p---kkk-cc-ppp
+gangster g10: -cc-k-pp-ccc-p-c-k-pp--p-k---kkk-ppp-c-kkk-ccc-c-kkk-pp--pp-kk-kk-p-cc-k
+gangster g11: cc-c-cc-c-k-kk-cc-p-c-k-cc-c-cc-ccc-ppp-k-ppp--ppp-ppp-c-kkk-kk--kkk-k-k
+gangster g12: -k-c-c-k--cc-cc--ccc-ccc-c-kkk-ccc-c-ccc--ccc-ccc-kk-kkk-cc-c-ccc-cc-ccc
+
+
+

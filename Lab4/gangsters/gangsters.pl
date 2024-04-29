@@ -1,6 +1,3 @@
-
-symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% To use this prolog template for other optimization problems, replace the code parts 1,2,3,4 below. %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -16,23 +13,6 @@ symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 oth
 %% we want to find the minimal K such that no gangster works more than
 %% K consecutive hours.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%% begin input example gangstersInput1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% % example: 4 gangsters are needed for killing on hour 1, one gangster on hour 2, two gangsters on hour 3, etc.
-%% gangstersNeeded( killing,       [4,1,2,4,2,1,1,4,1,1,3,2,4,2,1,2,1,3,2,3,4,1,3,1,2,3,1,3,4,3,2,3,4,2,3,1,4,4,1,4,2,2,1,4,3,3,3,2,2,3,4,4,1,3,3,3,4,4,1,1,2,3,3,3,3,2,1,3,1,1,3,2] ).
-%% gangstersNeeded( countingMoney, [1,2,1,3,1,4,3,1,3,1,4,3,2,2,1,2,1,2,1,1,2,1,2,1,1,3,1,2,2,4,3,2,4,4,4,1,2,4,4,2,4,4,4,3,2,2,1,3,2,1,3,3,2,3,3,3,1,4,1,1,3,1,2,3,3,1,4,4,3,3,2,1] ).
-%% gangstersNeeded( politics,      [2,4,2,1,1,1,4,1,1,4,1,3,2,4,1,1,4,1,4,3,1,3,2,4,4,2,4,2,1,1,4,3,1,2,2,2,1,1,3,1,1,1,2,2,4,1,1,3,4,4,2,3,2,4,3,1,1,1,3,4,2,2,4,4,3,1,1,2,1,4,3,2] ).
-%%
-%% gangsters([g01,g02,g03,g04,g05,g06,g07,g08,g09,g10,g11,g12]).
-%%
-%% notAvailable(g01,[6,13,14,16,21,35,37,41,59]).
-%% notAvailable(g02,[14,34,40,45,48,52,58,65,70,72]).
-%% notAvailable(g03,[8,11,13,27,30,38,50,51,70]).
-%% notAvailable(g04,[4,12,16,17,26,30,42,45,48,55,71]).
-
-%%%%%%% end input example gangstersInput1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% EXAMPLE OUTPUT with cost 18:
 %% 
@@ -64,11 +44,12 @@ available(G,H):-   hour(H), gangster(G), \+blocked(G,H).
 
 %%%%%%% End helpful definitions ===============================================================
 
+symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
 
 %%%%%%%  1. Declare SAT variables to be used: =================================================
 
-satVariable( does(G,T,H) ) :- ...  %  means:  "gangster G does task T at hour H"     (MANDATORY)
-
+satVariable( does(G,T,H) ) :- gangster(G), task(T), hour(H).  %  means:  "gangster G does task T at hour H"     (MANDATORY)
+satVariable( gangsterWorksAtHour(G, H)) :- gangster(G), hour(H). %means: "gangster G works at hour H"
 
 %%%%%%%  2. Clause generation for the SAT solver: =============================================
 
@@ -77,10 +58,66 @@ satVariable( does(G,T,H) ) :- ...  %  means:  "gangster G does task T at hour H"
 
 writeClauses(infinite) :- !, writeClauses(72),!.
 writeClauses(MaxConsecutiveHours) :-
-    ...
+    oneTaskPerHour,
+    noConsecutiveDifferentTask,
+    workOnAvailableHours,
+    respectMaxConsecutiveHours(MaxConsecutiveHours),
+    allTasksDone,
+    tieVars,
     true,!.
 writeClauses(_) :- told, nl, write('writeClauses failed!'), nl,nl, halt.
 
+oneTaskPerHour:- 
+        gangster(G),
+        hour(H),
+        findall(does(G, T, H), task(T), Lits),
+        atMost(1, Lits),
+        fail.
+oneTaskPerHour.
+
+noConsecutiveDifferentTask :-
+        gangster(G),
+        available(G, H1), available(G, H2), H2 is H1 + 1,
+        task(T1), task(T2), T1 \= T2,
+        writeOneClause( [-does(G, T1, H1), -does(G, T2, H2)] ),
+        fail.
+noConsecutiveDifferentTask.
+
+workOnAvailableHours:-
+        gangster(G),
+        hour(H),
+        blocked(G, H),
+        writeOneClause( [-gangsterWorksAtHour(G, H)] ),
+        fail.
+workOnAvailableHours.
+
+respectMaxConsecutiveHours(MaxConsecutiveHours):-
+        gangster(G),
+        task(T), hour(H1), hour(H2),
+        H2 is H1 + MaxConsecutiveHours,
+        findall(does(G, T, H), between(H1, H2, H), Lits),
+        negateAll(Lits, NLits),
+        atLeast(1, NLits),
+        fail.
+   
+respectMaxConsecutiveHours(_).
+
+allTasksDone:- 
+        hour(H),
+        task(T),
+        needed(T,H,N),
+        findall(does(G,T,H),gangster(G), Lits),
+        exactly(N, Lits),
+        fail.
+allTasksDone.
+
+tieVars :-
+        gangster(G),
+        hour(H),
+        findall(does(G, T, H), task(T), Lits),
+        expressOr(gangsterWorksAtHour(G, H), Lits),
+        fail.
+tieVars.
 
 %%%%%%%  3. DisplaySol: this predicate displays a given solution M: ===========================
 
@@ -100,7 +137,19 @@ writeIfBusy(_,_,_) :- write('-'),!.
 %%%%%%%  4. This predicate computes the cost of a given solution M: ===========================
 
 % Here the sort predicate is used to remove repeated elements of the list:
-costOfThisSolution(M,Cost) :- ...
+costOfThisSolution(M,Cost):- 
+        between(0, 71, Num),
+        Cost is 72 - Num,
+        gangster(G), 
+        findall(H, member(does(G,_,H),M),Hours),
+        append([_,List,_],Hours),
+        length(List, Cost),
+        consecutive(List), !.
+
+consecutive([]):- !.
+consecutive([_]):- !.
+consecutive([X,Y|YS]):- Y is X + 1, consecutive([Y|YS]).
+
 
 
 %%%%%%% =======================================================================================
