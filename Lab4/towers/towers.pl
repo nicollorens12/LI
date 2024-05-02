@@ -158,10 +158,8 @@ towerOnSignificantVillages:-
 towerOnSignificantVillages.
 
 atMostMaxNumtowers(MaxNumTowers):-
-        upperLimitTowers(M),
-        Max is min(MaxNumTowers,M), 
         findall(towerVila(V) ,village(V),L), 
-        atMost(Max,L),
+        atMost(MaxNumTowers,L),
         fail.
 atMostMaxNumtowers(_).
 
