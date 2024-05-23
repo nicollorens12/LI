@@ -30,7 +30,41 @@ calcD(List1, List2, D) :-
     eliminar_iguales(List1, List2, Rest1, Rest2),
     contar_elementos(Rest1, Rest2, D).
 
-resposta([], [], 0, 0).
 resposta(Lista1, Lista2, E, D) :-
     calcE(Lista1, Lista2, E),
     calcD(Lista1, Lista2, D).
+
+intents([ [ [v,b,g,l], [1,1] ], [ [m,t,g,l], [1,0] ], [ [g,l,g,l], [0,0] ], [ [v,b,m,m], [1,1] ], [ [v,t,b,t], [2,2] ]]).
+
+
+consistent_with_attempt(Guess, [Attempt, [E, D]]) :-
+    resposta(Guess, Attempt, E1, D1),
+    E1 =:= E,
+    D1 =:= D.
+
+consistent_with_all_attempts(_, []).
+consistent_with_all_attempts(Guess, [Attempt|Rest]) :-
+    consistent_with_attempt(Guess, Attempt),
+    consistent_with_all_attempts(Guess, Rest).
+
+color(v).
+color(b). 
+color(g).
+color(l).
+color(m).
+color(t).
+
+generate_guess([A, B, C, D]) :-
+    color(A), color(B), color(C), color(D).
+
+nouIntent(Guess) :-
+    intents(HistoricalAttempts),
+    generate_guess(Guess),
+    consistent_with_all_attempts(Guess, HistoricalAttempts).
+
+
+
+
+
+
+
