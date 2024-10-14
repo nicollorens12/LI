@@ -156,13 +156,17 @@ dados(P, N, L) :-
 % és la suma dels elements d'L.
 
 % suma(+L,?S)
-
-
-
+suma([],0).
+suma([X|L],S):-
+    suma(L,S1),
+    S is S1+X.
 
 % suma_la_resta(+L)
-
-
+suma_la_resta([]).
+suma_la_resta(L):-
+    member(X,L),
+    select(X,L,L1),
+    suma(L1,X).
 
 
 
