@@ -62,26 +62,26 @@ pescalar([X|L1],[Y|L2],P):-
 % Representant conjunts com llistes sense repeticions, escriu
 % predicats per les operacions d'intersecció i unió de conjunts donats
 
-% intersection(+L1,+L2,?L3)
-intersection([],_,[]).
-intersection([X|L1], L2, [X|L]):-
+% interseccio(+L1,+L2,?L3)
+interseccio([],_,[]).
+interseccio([X|L1], L2, [X|L]):-
     member(X,L2),
-    intersection(L1,L2,L).
-intersection([_|L1], L2, L):-
-    intersection(L1,L2,L).
+    interseccio(L1,L2,L).
+interseccio([_|L1], L2, L):-
+    interseccio(L1,L2,L).
 
 
 
 % union(+L1,+L2,?L3)
 
-union([],L,L).
-union(L,[],L).
-union([X|L1],L2,[X|L]) :-
+unio([],L,L).
+unio(L,[],L).
+unio([X|L1],L2,[X|L]) :-
     \+ member(X,L2),!,
-    union(L1,L2,L).
+    unio(L1,L2,L).
 
-union([_|T1],L2,L):-
-    union(T1,L2,L).
+unio([_|T1],L2,L):-
+    unio(T1,L2,L).
 
 
 
@@ -262,9 +262,9 @@ dom(_) :- write('no hi ha cadena'), nl.
 
 
 % PROB. L ========================================================
-% Write in Prolog a predicate flatten(+L,?F) that ``flattens''
+% Write in Prolog a predicate aplanada(+L,?F) that ``flattens''
 % (cat.: ``aplana'') the list F as in the example:
-% ?- flatten( [a,b,[c,[d],e,[]],f,[g,h]], F ).
+% ?- aplanada( [a,b,[c,[d],e,[]],f,[g,h]], F ).
 % F = [a,b,c,d,e,f,g,h]
 
 
