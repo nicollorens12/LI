@@ -1,0 +1,48 @@
+c PicoSAT SAT Solver Version 965
+c Copyright (c) 2006 - 2014 Armin Biere JKU Linz
+c x86_64-linux-gnu-gcc -g -O2 -ffile-prefix-map=/build/picosat-gXnVAd/picosat-965=. -fstack-protector-strong -Wformat -Werror=format-security
+c
+c using 2 as default phase
+c
+c parsing infile.cnf
+c parsed header 'p cnf 20 15580'
+c initialized 20 variables
+c found 15580 non trivial clauses
+c
+c random number generator seed 0
+c 
+c  seconds     variables   original    learned     agility
+c         level        used      conflicts    limit          MB
+c 
+c s   0.0   0.0    20   0.0 15504     0     0     0   0.0   2.3 
+c 
+c initial reduction limit 1000 clauses
+c 
+c 1   0.0   7.0    20 100.0 15504    55    55  1000   1.8   2.3 
+c 
+c  seconds     variables   original    learned     agility
+c         level        used      conflicts    limit          MB
+c 
+s SATISFIABLE
+v 1 2 -3 -4 5 6 7 8 9 10 11 -12 13 -14 15 16 -17 18 -19 20 0
+c
+c 0 iterations
+c 0 restarts
+c 0 failed literals
+c 55 conflicts
+c 61 decisions
+c 0 fixed variables
+c 416 learned literals
+c 35.4% deleted literals
+c 414 propagations
+c 623710 visits
+c 100.0% variables used
+c 0.0 seconds in library
+c 0.0 megaprops/second
+c 33.6 megavisits/second
+c probing 0.0 seconds 0%
+c 1 simplifications
+c 0 reductions
+c 0.0 MB recycled
+c 2.3 MB maximally allocated
+c 0.0 seconds total run time

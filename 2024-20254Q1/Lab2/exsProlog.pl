@@ -180,6 +180,12 @@ suma_la_resta(L):-
 % card( [1,2,1,5,1,3,3,7] )  l'intèrpret escriurà:
 % [[1,3],[2,1],[5,1],[3,2],[7,1]].
 
+card([]).
+card(L):-
+    findall([X,N], (member(X,L), findall(X, member(X,L), L1), length(L1,N)), L1),
+    write(L1).
+
+
 
 
 
@@ -196,6 +202,12 @@ suma_la_resta(L):-
 % ?- esta_ordenada([3,67,45]).
 % respon no.
 
+esta_ordenada([]).
+esta_ordenada([_]).
+esta_ordenada([X,Y|L]):-
+    X =< Y,
+    esta_ordenada([Y|L]).
+
 
 
 
@@ -211,7 +223,11 @@ suma_la_resta(L):-
 % s'escriu [a,c,c,a] i [c,a,a,c]
 % (possiblement diverses vegades, no cal que eviteu les repeticions).
 
-
+palindroms(L) :-
+    permutation(L, P),
+    reverse(P, P),
+    write(P),
+    nl.
 
 
 
@@ -247,7 +263,8 @@ dom(_) :- write('no hi ha cadena'), nl.
 
 % a) Escriu el predicat ok(+P) que falta.
 
-
+ok([_]).
+ok([f(_,X),f(Y,_)|P]) :- X = Y, ok([f(Y,_)|P]).
 
 
 
@@ -255,6 +272,7 @@ dom(_) :- write('no hi ha cadena'), nl.
 % b) Estén el predicat p/2 per a que el programa també pugui
 %    fer cadenes girant alguna de les fitxes de l'entrada.
 
+flip(f(X, Y), f(Y, X)).
 
 
 
@@ -267,7 +285,12 @@ dom(_) :- write('no hi ha cadena'), nl.
 % ?- aplanada( [a,b,[c,[d],e,[]],f,[g,h]], F ).
 % F = [a,b,c,d,e,f,g,h]
 
-
+aplanda([], []).
+aplanda([H|T], F) :-
+    aplanda(H, FH),
+    aplanda(T, FT),
+    append(FH, FT, F).
+aplanda(X, [X]) :- \+ is_list(X).
 
 
 
@@ -282,6 +305,33 @@ dom(_) :- write('no hi ha cadena'), nl.
 % the situation is the opposite: the proportion of people with
 % lung cancer is higher among non-smokers than among smokers!
 % Can this be true? Write a little Prolog program to find it out.
+
+group1(SmokersWithCancer, SmokersWithoutCancer, NonSmokersWithCancer, NonSmokersWithoutCancer) :-
+    between(0, 10, SmokersWithCancer),
+    between(0, 10, SmokersWithoutCancer),
+    between(0, 10, NonSmokersWithCancer),
+    between(0, 10, NonSmokersWithoutCancer),
+    SmokersWithCancer > SmokersWithoutCancer,
+    NonSmokersWithCancer > NonSmokersWithoutCancer.
+
+group2(SmokersWithCancer, SmokersWithoutCancer, NonSmokersWithCancer, NonSmokersWithoutCancer) :-
+    between(0, 10, SmokersWithCancer),
+    between(0, 10, SmokersWithoutCancer),
+    between(0, 10, NonSmokersWithCancer),
+    between(0, 10, NonSmokersWithoutCancer),
+    SmokersWithCancer > SmokersWithoutCancer,
+    NonSmokersWithCancer > NonSmokersWithoutCancer.
+
+% Check if the situation is true for the combined groups
+isSituationTrue :-
+    group1(S1C, S1NC, NS1C, NS1NC),
+    group2(S2C, S2NC, NS2C, NS2NC),
+    TotalSmokersWithCancer is S1C + S2C,
+    TotalSmokersWithoutCancer is S1NC + S2NC,
+    TotalNonSmokersWithCancer is NS1C + NS2C,
+    TotalNonSmokersWithoutCancer is NS1NC + NS2NC,
+    TotalSmokersWithCancer < TotalSmokersWithoutCancer,
+    TotalNonSmokersWithCancer > TotalNonSmokersWithoutCancer.
 
 %% Descomenteu i completeu les linies de codi que veieu a continuació:
 %% main :-
