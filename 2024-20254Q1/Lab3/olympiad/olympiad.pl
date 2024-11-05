@@ -82,7 +82,7 @@ writeClauses :- told, nl, write('writeClauses failed!'), nl, nl, halt.
 exactlyKMembers:-
         findall(chosen(S),student(S),Lits),
         numMembersTeam(K),
-        atMost(K,Lits),
+        exactly(K,Lits),
         fail.
 exactlyKMembers.
 
@@ -98,6 +98,7 @@ allFriendBetween.
 allDiferentTopic:-
         student(S1),
         student(S2),
+        S1 \= S2,
         expertise(S1,E),
         expertise(S2,E),
         writeOneClause([-chosen(S1),-chosen(S2)]),

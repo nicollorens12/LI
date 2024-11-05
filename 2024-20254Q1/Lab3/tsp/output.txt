@@ -1,0 +1,3 @@
+Generated 12969 clauses over 420 variables. 
+Calling solver....
+Unsatisfiable

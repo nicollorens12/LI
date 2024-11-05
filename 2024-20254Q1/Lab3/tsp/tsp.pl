@@ -1,18 +1,3 @@
-
-symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% We want to solve a modified version of the Traveling Salesman Problem:
-%% given a map with some (possibly one-way) roads between N cities,
-%% we want find a route starting and finishing in city 1 such that
-%% each city is visited exactly once. Moreover, we want to find a
-%% route with cost at most maxCost, considering that:
-%%  -trajects between cities with the same parity have cost 0 euros
-%%  -trajects between cities of different parity  have cost 1 euro
-%% For example, the following solution has cost 10:
-%%   1 10 4 8 3 20 18 14 12 11 15 2 5 9 17 16 7 13 19 6 1 
-%%    ^      ^ ^           ^     ^ ^      ^  ^       ^ ^
 %% Complete the following program to compute one such a route.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -50,22 +35,24 @@ symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 oth
 
 position(P) :- numCities(N), between(0,N,P).
 city(I) :-     adjacency(I,_).
+isAdjacent(C1,C2):- adjacency(C1,A), member(C2,A).
 
 %%%%%%% End helpful definitions ===============================================================
 
 
-%%%%%%% =======================================================================================
-%
-% Our LI Prolog template for solving problems using a SAT solver.
-%
-% It generates the SAT clauses, calls the SAT solver, and shows the solution. Just specify:
-%       1. SAT Variables
-%       2. Clause generation
-%       3. DisplaySol: show the solution.
-%
-%%%%%%% =======================================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% We want to solve a modified version of the Traveling Salesman Problem:
+%% given a map with some (possibly one-way) roads between N cities,
+%% we want find a route starting and finishing in city 1 such that
+%% each city is visited exactly once. Moreover, we want to find a
+%% route with cost at most maxCost, considering that:
+%%  -trajects between cities with the same parity have cost 0 euros
+%%  -trajects between cities of different parity  have cost 1 euro
+%% For example, the following solution has cost 10:
+%%   1 10 4 8 3 20 18 14 12 11 15 2 5 9 17 16 7 13 19 6 1 
+%%    ^      ^ ^           ^     ^ ^      ^  ^       ^ ^
 
-
+symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
 
 %%%%%%%  1. SAT Variables: ====================================================================
 
@@ -76,9 +63,52 @@ satVariable( visited(I,P) ) :-  city(I), position(P). % visited(I,P) meaning "ci
 %%%%%%%  2. Clause generation for the SAT solver: =============================================
 
 writeClauses :-
-    .... %% Complete this!  
+    startOneEndOne,
+    allCitiesVisitedOnce,
+    withNoRep,
+    allValidRoutes,
     true, !.
 writeClauses :- told, nl, write('writeClauses failed!'), nl, nl, halt.
+
+startOneEndOne:-
+        numCities(K),
+        writeOneClause([visited(1,0)]),
+        writeOneClause([visited(1,K)]),
+        position(P), P =\= 0, P =\= K,
+        writeOneClause([-visited(1,P)]),
+        fail.
+startOneEndOne.   
+
+allCitiesVisitedOnce:-
+        city(C),
+        C =\= 1,
+        numCities(K),
+        findall(visited(C,P),(position(P), P =\= 0, P =\= K), Lits),
+        exactly(1,Lits),
+        fail.
+allCitiesVisitedOnce.
+
+
+withNoRep :- 
+        position(P), position(Q),
+        P =\= Q, city(I), I =\= 1,
+        writeOneClause([-visited(I,P), -visited(I,Q)]),
+        fail.
+withNoRep.
+
+allValidRoutes:-
+        city(C),
+        position(P),
+        numCities(K),
+        P < K,
+        P1 is P+1,
+        city(C1),isAdjacent(C,C1),
+        writeOneClause([-visited(C,P),visited(C1,P1)]),
+        fail.
+
+allValidRoutes.
+
+
 
 
 %%%%%%%  3. DisplaySol: show the solution. Here M contains the literals that are true in the model:
