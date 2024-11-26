@@ -75,10 +75,13 @@ satVariable( double(S,R)  ) :- team(S),          round(R).   %  "team S has a do
 writeClauses(infinite) :- !, numTeams(N), writeClauses(N),!.
 writeClauses(MaxCost) :-
     eachTeamEachRoundExactlyOneMatch,
-    ...
-    ...  % relate variables match and home
-    ...  % relate variables home and double
-    ...
+    everyTwoTeamsPlayExactlyOnce,
+    tieVarsMatchHome,
+    tieVarsHomeDouble,
+    noDoubles,
+    eachRoundTVMatch,
+    notHomes,
+    noTriples,
     maxCost(MaxCost),
     true,!.
 writeClauses(_) :- told, nl, write('writeClauses failed!'), nl,nl, halt.
@@ -87,6 +90,37 @@ eachTeamEachRoundExactlyOneMatch :- team(T), round(R),
     findall( match(S,T,R), difTeams(S,T), LitsH ),
     findall( match(T,S,R), difTeams(S,T), LitsA ), append(LitsH,LitsA,Lits), exactly(1,Lits), fail.
 eachTeamEachRoundExactlyOneMatch.
+
+
+everyTwoTeamsPlayExactlyOnce:- difTeams(S,T), S>T,
+    findall( match(S,T,R), round(R),      LitsH ),
+    findall( match(T,S,R), round(R),      LitsA ), append(LitsH,LitsA,Lits), exactly(1,Lits), fail.
+everyTwoTeamsPlayExactlyOnce.
+
+tieVarsMatchHome:- difTeams(S,T), round(R),
+    writeOneClause([ -match(S,T,R),   home(S,R) ]),
+    writeOneClause([ -match(S,T,R), -home(T,R) ]), fail.
+tieVarsMatchHome.
+
+tieVarsHomeDouble:- team(S), round(R1), R2 is R1+1, round(R2),
+    writeOneClause([  -home(S,R1),  -home(S,R2),    double(S,R2) ]),
+    writeOneClause([   home(S,R1),   home(S,R2),    double(S,R2) ]),
+    writeOneClause([  -home(S,R1),   home(S,R2),   -double(S,R2) ]),
+    writeOneClause([   home(S,R1),  -home(S,R2),   -double(S,R2) ]), fail.
+tieVarsHomeDouble.
+
+noDoubles:- noDoubles(L), member(R,L), team(S), writeOneClause([ -double(S,R) ]), fail.
+noDoubles.
+
+eachRoundTVMatch:- round(R),  findall(match(S,T,R),tvMatch(S,T),Lits),  writeOneClause(Lits), fail.
+eachRoundTVMatch.
+
+notHomes:- away(T,R), writeOneClause([ -home(T,R) ]), fail.
+notHomes.
+
+noTriples:- team(S), round(R1), R1>1, R2 is R1+1, round(R2),
+    writeOneClause([  -double(S,R1), -double(S,R2) ]), fail.
+noTriples.
 
 maxCost(Max) :- team(T), findall(double(T,R), round(R), Lits ), atMost(Max,Lits), fail.
 maxCost(_).
@@ -110,9 +144,9 @@ write2(R) :- write(R),!.
 
 %%%%%%%  4. This predicate computes the cost of a given solution M: ===========================
 
-costOfThisSolution(M,Cost) :-
-    numTeams(N), N1 is N-1, between(0,N1,I), Cost is N1-I,
-    ...  % Some team has 'Cost' doubles in this solution/model
+costOfThisSolution(M,Cost):- findall(N,(team(T),numberDoubles(T,M,N)), L), max_list(L,Cost),!.
+
+numberDoubles(T,M,N):- findall( R, member(double(T,R),M), L), length(L,N), !.
 
 
 %%%%%%% =======================================================================================

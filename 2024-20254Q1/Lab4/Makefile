@@ -1,6 +1,6 @@
 #file = minColoring
-file = factory
-#file = basket
+#file = factory
+file = basket
 
 $(file): $(file).pl
 	swipl -q -O -g main --stand_alone=true -o $(file) -c $(file).pl
