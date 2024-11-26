@@ -1,0 +1,132 @@
+
+--------------------------------------------
+--- ap.pl entregat: ---
+
+     1	%% ----------- [2.5 points] ---------- %%
+     2	
+     3	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     4	% A list P of integers is said to be an *arithmetic progression* if the difference between
+     5	% consecutive elements is a constant (which is called its *common difference*).
+     6	% For instance, [5,11,17] is an arithmetic progression (and its common difference is 6).
+     7	%
+     8	% The predicate longestAP(+L,-P) below should instantiate P with a longest arithmetic progression 
+     9	% appearing as a subsequence of L, where L is an ordered list of distinct integers. A subsequence
+    10	% of a list L is a list that can be obtained from L by deleting some or no elements without
+    11	% changing the order of the remaining elements. For example, the query
+    12	% longestAP([2,5,7,11,17,18],P) instantiates P with [5,11,17]. 
+    13	%
+    14	% Predicate longestAP(L,P) uses lengthAP(L,N,P) to find arithmetic progressions of length N.
+    15	% Define the predicate lengthDiffAP/4 that is used in lengthAP/3. Namely, predicate 
+    16	% lengthDiffAP(L,N,D,P) should be true if P is an arithmetic progression of length N and 
+    17	% common difference D appearing as a subsequence in the (nonempty) sorted list of distinct 
+    18	% integers L.
+    19	%
+    20	% The aimed solution to longestAP/2 works in polynomial time.
+    21	% An alternative non-polynomial time solution will be *penalized*.
+    22	%
+    23	% For example,
+    24	%
+    25	%   ?- lengthDiffAP([3,12,17,21,60,66],3,9,P).
+    26	%   P = [3, 12, 21].
+    27	%
+    28	%   ?- lengthDiffAP([30,40,45,70,85,100,130,160,200,220,250,300,320,360],5,30,P).
+    29	%   P = [40, 70, 100, 130, 160].
+    30	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    31	
+    32	% longestAP(+L,-P) holds if P is instantiated to a longest arithmetic progression
+    33	%     that is a subsequence of a nonempty sorted list of distinct integers L
+    34	longestAP(L,P) :-
+    35	    length(L,N), !,
+    36	    between(1,N,K), I is N - K + 1,
+    37	    lengthAP(L,I,P), !.
+    38	
+    39	% lengthAP(+L,+N,-P) holds if P is instantiated to an arithmetic progression
+    40	%      of length N that is a subsequence of a nonempty sorted list of distinct integers L
+    41	lengthAP([X|_],1,[X]).
+    42	lengthAP(L,N,P) :-
+    43	    N > 1,
+    44	    findall(D, (append(_, [X|R], L), member(Y, R), D is Y - X), LD),
+    45	    member(D, LD),
+    46	    lengthDiffAP(L,N,D,P), !.
+    47	
+    48	% lengthDiffAP(+L,+N,+D,-P) holds if P is instantiated to an arithmetic progression
+    49	%      of length N and common difference D that is a subsequence of a nonempty sorted list
+    50	%      of distinct integers L
+    51	lengthDiffAP(L,N,D,P) :-
+    52	    subconjunto(L,P),
+    53	    length(P,N),
+    54	    isProgression(P,D).
+    55	
+    56	
+    57	isProgression([],_).
+    58	isProgression([_|[]],_).
+    59	isProgression([X,Y|L],D):-
+    60	    D is Y - X,
+    61	    isProgression([Y|L],D).
+    62	
+    63	subconjunto([],[]).
+    64	subconjunto([X|L],[X|S]):- subconjunto(L,S).
+    65	subconjunto([_|L],   S ):- subconjunto(L,S).
+    66	
+
+
+
+--- proves ap.pl: -----------------------
+
+
+
+example lengthDiffAP-answer_true_00: lengthDiffAP([1,2,3],3,1,[1,2,3])  OK
+
+real	0m0,014s
+user	0m0,011s
+sys	0m0,004s
+
+example lengthDiffAP-answer_true_1: lengthDiffAP([3,12,17,21,60,66],3,9,[3,12,21])  OK
+
+real	0m0,014s
+user	0m0,011s
+sys	0m0,004s
+
+example lengthDiffAP-answer_true_2: lengthDiffAP([30,40,45,70,85,100,130,160,200,220,250,300,320,360],5,30,[40,70,100,130,160])  OK
+
+real	0m0,015s
+user	0m0,011s
+sys	0m0,004s
+
+example lengthDiffAP-answer_true_3: lengthDiffAP([0,1,2,3,4,5,6,7,8,9],4,3,[0,3,6,9])  OK
+
+real	0m0,015s
+user	0m0,011s
+sys	0m0,004s
+
+example lengthDiffAP-answer_false_1: lengthDiffAP([30,40,45,70,85,100,130,160,190,200,220,250,300,320,360],9,30,[40,70,100,130,160,190,220,250])  OK
+
+real	0m0,014s
+user	0m0,012s
+sys	0m0,003s
+
+example lengthDiffAP-answer_false_2: lengthDiffAP([0,1,2,3,4,5,6,7,8,9],4,3,[0,2,5,8])  OK
+
+real	0m0,014s
+user	0m0,012s
+sys	0m0,003s
+
+example lengthDiffAP-answer_false_3: lengthDiffAP([0,1,2,3,4,5,6],6,1,[0,1,2,4,5,6])  OK
+
+real	0m0,014s
+user	0m0,011s
+sys	0m0,004s
+
+example lengthDiffAP-instantiateTheOnlyAnswer_1: lengthDiffAP([1,2,4,8,16,32,64,128,256,512,1024],2,128) resposta: [128,256]  OK
+
+real	0m0,015s
+user	0m0,012s
+sys	0m0,003s
+
+
+real	0m20,001s
+user	0m0,001s
+sys	0m0,001s
+
+TIMEOUT (>20s) en l'execució del problema/test 
+

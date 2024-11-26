@@ -1,0 +1,417 @@
+
+--------------------------------------------
+--- euphoria.pl entregat: ---
+
+     1	%% ----------- [5 points] ---------- %%
+     2	
+     3	
+     4	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     5	/*
+     6	
+     7	Euphoria is a song contest in the Catalan TV station. At the end of
+     8	the season, a final concert is organized where the participants sing
+     9	their best songs from the programme. Your goal is to choose the songs
+    10	and to decide their order in the concert.
+    11	
+    12	Each song has a *score*, based on the votes of the audience. The
+    13	higher the score, the more popular the song is. Songs have another
+    14	attribute, which we will refer to as their *type*: a song may be
+    15	a *dance* song        (the audience is expected to dance wildly); or
+    16	a *flashlight* song   (the audience is expected to turn on the flashlight
+    17	                       of their cell phones and wave them); or
+    18	a *regular* song      (anything else).
+    19	
+    20	Songs are identified by consecutive natural numbers starting from 1.
+    21	The input gives, for each song: its identifier, its title, its score,
+    22	its type, and the programme participant who sings it.
+    23	
+    24	The following constraints should be met. First of all, the concert
+    25	should consist of the specified number of songs. Of course, songs
+    26	cannot be repeated. Secondly, to keep the audience's spirits high, the
+    27	score of the songs along the concert should never decrease. In the
+    28	third place, nobody can sing two songs in a row. Morever, each of the
+    29	programme participants has to sing at least one song. Also, there is a
+    30	minimum on the number of dance songs and flashlight songs in the
+    31	concert. Finally, in a window of consecutive songs of the specified
+    32	length, there can be at most one dance song; and similarly for
+    33	flashlight songs.
+    34	
+    35	*/
+    36	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    37	
+    38	
+    39	%%%%%%% begin example %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    40	
+    41	%% % numberOfSongsForConcert(N):
+    42	%% % N songs are sung in the concert.
+    43	%% numberOfSongsForConcert(20).
+    44	
+    45	%% % minNumberOfSongsOfType(M, T):
+    46	%% % in the concert there are at least M songs of type T.
+    47	%% minNumberOfSongsOfType(3,      dance).
+    48	%% minNumberOfSongsOfType(3, flashlight).
+    49	
+    50	%% % inWindowOfThisSizeAtMostOneOfType(W, T):
+    51	%% % in a window of W consecutive song slots, at most one is of type T.
+    52	%% inWindowOfThisSizeAtMostOneOfType(4,      dance).
+    53	%% inWindowOfThisSizeAtMostOneOfType(4, flashlight).
+    54	
+    55	%% %%    Id                             Title   Score          Type     Participant
+    56	%% data(  1,                    'Tu es foutu',      8,      regular,        'Julien').
+    57	%% data(  2,            'Great balls of fire',      7,        dance,        'Julien').
+    58	%% data(  3,                        'Bon dia',      6,        dance,        'Julien').
+    59	%% data(  4,            'Baby don\'t hurt me',      6,      regular,        'Julien').
+    60	%% data(  5,                         'Corren',      5,      regular,         'Lluís').
+    61	%% data(  6,                       'Bailoteo',      7,        dance,         'Lluís').
+    62	%% data(  7,                   'Lose control',      6,      regular,         'Lluís').
+    63	%% data(  8,                       'Wa yeah!',      8,        dance,         'Lluís').
+    64	%% data(  9,                    'Blank space',      7,      regular,         'Maria').
+    65	%% data( 10,                       'Symphony',      8,      regular,         'Maria').
+    66	%% data( 11,                          'Creep',      9,   flashlight,         'Maria').
+    67	%% data( 12,            'The show must go on',      8,   flashlight,         'Maria').
+    68	%% data( 13,                           'Torn',      7,      regular,         'Misty').
+    69	%% data( 14,                       'Diamonds',      8,      regular,         'Misty').
+    70	%% data( 15,                  'Eternal flame',      9,   flashlight,         'Misty').
+    71	%% data( 16,                 'Girl gone wild',      6,      regular,         'Misty').
+    72	%% data( 17,                        'Valerie',      6,      regular,       'Valeria').
+    73	%% data( 18,                           'Lobo',      7,      regular,       'Valeria').
+    74	%% data( 19,                  'Els teus ulls',      6,   flashlight,       'Valeria').
+    75	%% data( 20,                            'SOS',      6,      regular,       'Fredrik').
+    76	%% data( 21,                   'Grande amore',      7,      regular,       'Fredrik').
+    77	%% data( 22,               'Nothing compares',      8,   flashlight,     'Xavi Noms').
+    78	%% data( 23,                    'A poc a poc',      7,      regular,     'Xavi Noms').
+    79	%% data( 24,            'Million dollar baby',      6,      regular, 'Aina Da Silva').
+    80	%% data( 25,       'Dancing in the Moonlight',      5,      regular, 'Aina Da Silva').
+    81	%% data( 26,                     'Chandelier',      6,      regular,         'Lluna').
+    82	%% data( 27,                     'Girlfriend',      5,      regular,         'Lluna').
+    83	%% data( 28,                     'Tant de bo',      6,      regular,          'Bita').
+    84	%% data( 29,                      'Rich girl',      5,      regular,          'Bita').
+    85	%% data( 30,                      'La platja',      6,        dance,   'Pau Culleré').
+    86	%% data( 31, 'La petita rambla del poble-sec',      5,      regular,        'Rangel').
+    87	%% data( 32,                      'I love it',      4,      regular,           'Yuk').
+    88	%% data( 33,              'Paraules paraules',      3,      regular,        'Dounia').
+    89	%% data( 34,                   'La meva sort',      3,      regular,        'Tamara').
+    90	%% data( 35,                'Blinding lights',      2,      regular,          'Hugo').
+    91	
+    92	%%%%%%% end example %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    93	/*
+    94	
+    95	Euphoria is a song contest in the Catalan TV station. At the end of
+    96	the season, a final concert is organized where the participants sing
+    97	their best songs from the programme. Your goal is to choose the songs
+    98	and to decide their order in the concert.
+    99	
+   100	Each song has a *score*, based on the votes of the audience. The
+   101	higher the score, the more popular the song is. Songs have another
+   102	attribute, which we will refer to as their *type*: a song may be
+   103	a *dance* song        (the audience is expected to dance wildly); or
+   104	a *flashlight* song   (the audience is expected to turn on the flashlight
+   105	                       of their cell phones and wave them); or
+   106	a *regular* song      (anything else).
+   107	
+   108	Songs are identified by consecutive natural numbers starting from 1.
+   109	The input gives, for each song: its identifier, its title, its score,
+   110	its type, and the programme participant who sings it.
+   111	
+   112	The following constraints should be met. First of all, the concert
+   113	should consist of the specified number of songs. Of course, songs
+   114	cannot be repeated. Secondly, to keep the audience's spirits high, the
+   115	score of the songs along the concert should never decrease. In the
+   116	third place, nobody can sing two songs in a row. Morever, each of the
+   117	programme participants has to sing at least one song. Also, there is a
+   118	minimum on the number of dance songs and flashlight songs in the
+   119	concert. Finally, in a window of consecutive songs of the specified
+   120	length, there can be at most one dance song; and similarly for
+   121	flashlight songs.
+   122	
+   123	*/
+   124	%%%%%%% Some helpful definitions to make the code cleaner: ====================================
+   125	
+   126	slot(I) :- numberOfSongsForConcert(N), between(1, N, I).
+   127	song(J) :- data(J, _, _, _, _).
+   128	
+   129	songParticipant(J, P) :- data(J, _, _, _, P).
+   130	songScore(J, S)       :- data(J, _, S, _, _).
+   131	songType(J, T)        :- data(J, _, _, T, _).
+   132	
+   133	participant(P) :- findall(X, songParticipant(_, X), L), sort(L, S), member(P, S).
+   134	
+   135	%%%%%%% End helpful definitions ===============================================================
+   136	
+   137	symbolicOutput(0).  % set to 1 for DEBUGGING: to see symbolic output only; 0 otherwise.
+   138	
+   139	%%%%%%%  1. SAT Variables: ====================================================================
+   140	
+   141	satVariable( x(I, J) ) :- slot(I), song(J).  % in the I-th slot song J is sung.
+   142	
+   143	
+   144	%%%%%%%  2. Clause generation for the SAT solver: =============================================
+   145	
+   146	writeClauses :-
+   147	    everySlotExactlyOneSong,        % at every slot exactly 1 song is sung
+   148	    everySongAtMostOneSlot,         % songs cannot be repeated
+   149	    scoreNeverDecreases,            % (*1) the score of songs along the concert never decreases
+   150	    noParticipantSings2SongsInARow, % (*2) nobody can sing 2 songs in a row
+   151	    everyParticipantAtLeastOneSong, % (*3) every participant sings at least 1 song
+   152	    enoughSongsOfEachType,          % (*4) minimum number of dance/flashlight songs is respected
+   153	    atMostOneOfThisTypeInAWindow,   % (*5) in window of consecutive songs at most 1 of type dance/flashlight
+   154	    true, !.
+   155	writeClauses :- told, nl, write('writeClauses failed!'), nl, nl, halt.
+   156	
+   157	everySlotExactlyOneSong :-
+   158	    slot(I),
+   159	    findall(x(I, J), song(J), Lits),
+   160	    exactly(1, Lits),
+   161	    fail.
+   162	everySlotExactlyOneSong.
+   163	
+   164	everySongAtMostOneSlot :-
+   165	    song(J),
+   166	    findall(x(I, J), slot(I), Lits),
+   167	    atMost(1, Lits),
+   168	    fail.
+   169	everySongAtMostOneSlot.
+   170	
+   171	
+   172	scoreNeverDecreases:-
+   173	    slot(S1),slot(S2),
+   174	    songScore(J1,P1),songScore(J2,P2),
+   175	    J1 =\= J2,
+   176	    S2 > S1,
+   177	    P2 < P1,
+   178	    writeOneClause([-x(S1,J1),-x(S2,J2)]),
+   179	    fail.
+   180	scoreNeverDecreases.
+   181	
+   182	
+   183	noParticipantSings2SongsInARow:-
+   184	    song(J1),song(J2),
+   185	    songParticipant(J1,P),songParticipant(J2,P),
+   186	    slot(S),
+   187	    S1 is S+1,
+   188	    numberOfSongsForConcert(K),
+   189	    S1 =< K,
+   190	    writeOneClause([-x(S, J1),-x(S1, J2)]),
+   191	    writeOneClause([-x(S, J2),-x(S1, J1)]),
+   192	    fail.
+   193	noParticipantSings2SongsInARow.
+   194	
+   195	
+   196	everyParticipantAtLeastOneSong:-
+   197	    participant(P),
+   198	    findall(x(S,J),(slot(S), songParticipant(J,P)),Lits),
+   199	    atLeast(1,Lits),
+   200	    fail.
+   201	everyParticipantAtLeastOneSong.
+   202	
+   203	
+   204	enoughSongsOfEachType:-
+   205	    minNumberOfSongsOfType(M, T),
+   206	    findall(x(S,J),(slot(S),songType(J,T)),Lits),
+   207	    atLeast(M,Lits),
+   208	    fail.
+   209	enoughSongsOfEachType.
+   210	
+   211	atMostOneOfThisTypeInAWindow:-
+   212	    inWindowOfThisSizeAtMostOneOfType(W, T),
+   213	    slot(S),
+   214	    SlotMax is S + W,
+   215	    numberOfSongsForConcert(K),
+   216	    SlotMax =< K,
+   217	    findall(x(S1,J),(songType(J,T),between(S,SlotMax,S1)),Lits),
+   218	    atMost(1,Lits),
+   219	    fail.
+   220	atMostOneOfThisTypeInAWindow.
+   221	
+   222	%% TO BE COMPLETED
+   223	
+   224	%%%%%%%  3. DisplaySol: show the solution. Here M contains the literals that are true in the model:
+   225	
+   226	print_with_leading_zero(N) :- format('~|~`0t~d~2+', [N]).
+   227	print_left_aligned(S, W) :-   format('~|~w~t~*+', [S, W]).
+   228	
+   229	
+   230	%% displaySol(M) :- nl, sort(M,M1), write(M1), nl, nl, fail.
+   231	displaySol(M) :-
+   232	    slot(I),
+   233	    write('Song #'), print_with_leading_zero(I), write(' by\t'),
+   234	    member(x(I,J), M),
+   235	    data(J, Title, Score, Type, Participant),
+   236	    print_left_aligned(Participant, 15),
+   237	    print_left_aligned(Title,       35),
+   238	    print_left_aligned(Score,        5),
+   239	    print_left_aligned(Type,        10),
+   240	    nl,
+   241	    fail.
+   242	displaySol(_).
+   243	
+   244	%%%%%%% =======================================================================================
+   245	
+   246	
+   247	
+   248	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   249	%% Everything below is given as a standard library, reusable for solving
+   250	%%    with SAT many different problems.
+   251	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   252	
+   253	%%%%%%% Cardinality constraints on arbitrary sets of literals Lits: ===========================
+   254	
+   255	exactly(K,Lits) :- symbolicOutput(1), write( exactly(K,Lits) ), nl, !.
+   256	exactly(K,Lits) :- atLeast(K,Lits), atMost(K,Lits),!.
+   257	
+   258	atMost(K,Lits) :- symbolicOutput(1), write( atMost(K,Lits) ), nl, !.
+   259	atMost(K,Lits) :-   % l1+...+ln <= k:  in all subsets of size k+1, at least one is false:
+   260	      negateAll(Lits,NLits),
+   261	      K1 is K+1,    subsetOfSize(K1,NLits,Clause), writeOneClause(Clause),fail.
+   262	atMost(_,_).
+   263	
+   264	atLeast(K,Lits) :- symbolicOutput(1), write( atLeast(K,Lits) ), nl, !.
+   265	atLeast(K,Lits) :-  % l1+...+ln >= k: in all subsets of size n-k+1, at least one is true:
+   266	      length(Lits,N),
+   267	      K1 is N-K+1,  subsetOfSize(K1, Lits,Clause), writeOneClause(Clause),fail.
+   268	atLeast(_,_).
+   269	
+   270	negateAll( [], [] ).
+   271	negateAll( [Lit|Lits], [NLit|NLits] ) :- negate(Lit,NLit), negateAll( Lits, NLits ),!.
+   272	
+   273	negate( -Var,  Var) :- !.
+   274	negate(  Var, -Var) :- !.
+   275	
+   276	subsetOfSize(0,_,[]) :- !.
+   277	subsetOfSize(N,[X|L],[X|S]) :- N1 is N-1, length(L,Leng), Leng>=N1, subsetOfSize(N1,L,S).
+   278	subsetOfSize(N,[_|L],   S ) :-            length(L,Leng), Leng>=N,  subsetOfSize( N,L,S).
+   279	
+   280	
+   281	%%%%%%% Express equivalence between a variable and a disjunction or conjunction of literals ===
+   282	
+   283	% Express that Var is equivalent to the disjunction of Lits:
+   284	expressOr( Var, Lits ) :- symbolicOutput(1), write( Var ), write(' <--> or('), write(Lits), write(')'), nl, !.
+   285	expressOr( Var, Lits ) :- member(Lit,Lits), negate(Lit,NLit), writeOneClause([ NLit, Var ]), fail.
+   286	expressOr( Var, Lits ) :- negate(Var,NVar), writeOneClause([ NVar | Lits ]),!.
+   287	
+   288	%% expressOr(a,[x,y]) genera 3 clausulas (como en la Transformación de Tseitin):
+   289	%% a == x v y
+   290	%% x -> a       -x v a
+   291	%% y -> a       -y v a
+   292	%% a -> x v y   -a v x v y
+   293	
+   294	% Express that Var is equivalent to the conjunction of Lits:
+   295	expressAnd( Var, Lits) :- symbolicOutput(1), write( Var ), write(' <--> and('), write(Lits), write(')'), nl, !.
+   296	expressAnd( Var, Lits) :- member(Lit,Lits), negate(Var,NVar), writeOneClause([ NVar, Lit ]), fail.
+   297	expressAnd( Var, Lits) :- findall(NLit, (member(Lit,Lits), negate(Lit,NLit)), NLits), writeOneClause([ Var | NLits]), !.
+   298	
+   299	
+   300	%%%%%%% main: =================================================================================
+   301	
+   302	main :- current_prolog_flag(os_argv, Argv),
+   303	        nth0(1, Argv, InputFile),
+   304	        main(InputFile), !.
+   305	main :-  write('Usage: $ ./<executable> <example>          or ?- main(<example>).'), nl, halt.
+   306	
+   307	main(InputFile) :-
+   308	        symbolicOutput(1), !,
+   309	        consult(InputFile),
+   310	        writeClauses, halt.   % print the clauses in symbolic form and halt Prolog
+   311	main(InputFile):-
+   312	        consult(InputFile),
+   313	        initClauseGeneration,
+   314	        tell(clauses), writeClauses, told,          % generate the (numeric) SAT clauses and call the solver
+   315	        tell(header),  writeHeader, told,
+   316	        numVars(N), numClauses(C),
+   317	        write('Generated '), write(C), write(' clauses over '), write(N), write(' variables. '),nl,
+   318	        shell('cat header clauses > infile.cnf',_),
+   319	        write('Calling solver....'), nl,
+   320	        shell('kissat -v infile.cnf > model', Result),  % if sat: Result=10; if unsat: Result=20.
+   321	        treatResult(Result),!.
+   322	
+   323	treatResult(20) :- write('Unsatisfiable'), nl, halt.
+   324	treatResult(10) :- write('Solution found: '), nl, see(model), symbolicModel(M), seen, displaySol(M), nl,nl,halt.
+   325	treatResult( _) :- write('cnf input error. Wrote anything strange in your cnf?'), nl,nl, halt.
+   326	
+   327	
+   328	initClauseGeneration :-  %initialize all info about variables and clauses:
+   329	        retractall(numClauses(   _)),
+   330	        retractall(numVars(      _)),
+   331	        retractall(varNumber(_,_,_)),
+   332	        assert(numClauses( 0 )),
+   333	        assert(numVars(    0 )),     !.
+   334	
+   335	writeOneClause([]) :- symbolicOutput(1),!, nl.
+   336	writeOneClause([]) :- countClause, write(0), nl.
+   337	writeOneClause([Lit|C]) :- w(Lit), writeOneClause(C),!.
+   338	w(-Var) :- symbolicOutput(1), satVariable(Var), write(-Var), write(' '),!.
+   339	w( Var) :- symbolicOutput(1), satVariable(Var), write( Var), write(' '),!.
+   340	w(-Var) :- satVariable(Var),  var2num(Var,N),   write(-), write(N), write(' '),!.
+   341	w( Var) :- satVariable(Var),  var2num(Var,N),             write(N), write(' '),!.
+   342	w( Lit) :- told, write('ERROR: generating clause with undeclared variable in literal '), write(Lit), nl,nl, halt.
+   343	
+   344	
+   345	% given the symbolic variable V, find its variable number N in the SAT solver:
+   346	:- dynamic(varNumber / 3).
+   347	var2num(V,N) :- hash_term(V,Key), existsOrCreate(V,Key,N),!.
+   348	existsOrCreate(V,Key,N) :- varNumber(Key,V,N),!.                            % V already existed with num N
+   349	existsOrCreate(V,Key,N) :- newVarNumber(N), assert(varNumber(Key,V,N)), !.  % otherwise, introduce new N for V
+   350	
+   351	writeHeader :- numVars(N),numClauses(C), write('p cnf '),write(N), write(' '),write(C),nl.
+   352	
+   353	countClause :-     retract( numClauses(N0) ), N is N0+1, assert( numClauses(N) ),!.
+   354	newVarNumber(N) :- retract( numVars(   N0) ), N is N0+1, assert(    numVars(N) ),!.
+   355	
+   356	% Getting the symbolic model M from the output file:
+   357	symbolicModel(M) :- get_code(Char), readWord(Char,W), symbolicModel(M1), addIfPositiveInt(W,M1,M),!.
+   358	symbolicModel([]).
+   359	addIfPositiveInt(W,L,[Var|L]) :- W = [C|_], between(48,57,C), number_codes(N,W), N>0, varNumber(_,Var,N),!.
+   360	addIfPositiveInt(_,L,L).
+   361	readWord( 99,W) :- repeat, get_code(Ch), member(Ch,[-1,10]), !, get_code(Ch1), readWord(Ch1,W),!. % skip line starting w/ c
+   362	readWord(115,W) :- repeat, get_code(Ch), member(Ch,[-1,10]), !, get_code(Ch1), readWord(Ch1,W),!. % skip line starting w/ s
+   363	readWord( -1,_) :-!, fail. %end of file
+   364	readWord(C, []) :- member(C,[10,32]), !. % newline or white space marks end of word
+   365	readWord(Char,[Char|W]) :- get_code(Char1), readWord(Char1,W), !.
+   366	
+   367	%%%%%%% =======================================================================================
+
+
+
+--- proves euphoria.pl: -----------------------
+
+
+
+Generated 135328 clauses over 700 variables. 
+Calling solver....
+Solution found: 
+Song #01 by	Hugo           Blinding lights                    2    regular   
+Song #02 by	Tamara         La meva sort                       3    regular   
+Song #03 by	Dounia         Paraules paraules                  3    regular   
+Song #04 by	Yuk            I love it                          4    regular   
+Song #05 by	Rangel         La petita rambla del poble-sec     5    regular   
+Song #06 by	Pau Culleré    La platja                          6    dance     
+Song #07 by	Aina Da Silva  Million dollar baby                6    regular   
+Song #08 by	Valeria        Els teus ulls                      6    flashlight
+Song #09 by	Lluna          Chandelier                         6    regular   
+Song #10 by	Bita           Tant de bo                         6    regular   
+Song #11 by	Julien         Great balls of fire                7    dance     
+Song #12 by	Xavi Noms      A poc a poc                        7    regular   
+Song #13 by	Maria          Blank space                        7    regular   
+Song #14 by	Fredrik        Grande amore                       7    regular   
+Song #15 by	Maria          The show must go on                8    flashlight
+Song #16 by	Lluís          Wa yeah!                           8    dance     
+Song #17 by	Misty          Diamonds                           8    regular   
+Song #18 by	Julien         Tu es foutu                        8    regular   
+Song #19 by	Maria          Symphony                           8    regular   
+Song #20 by	Misty          Eternal flame                      9    flashlight
+
+
+Check Model:
+    checkEverySlotExactlyOneSong       : OK
+    checkEverySongAtMostOneSlot        : OK
+    checkScoreNeverDecreases           : OK
+    checkNoParticipantSings2SongsInARow: OK
+    checkEveryParticipantAtLeastOneSong: OK
+    checkEnoughSongsOfEachType         : OK
+    checkAtMostOneOfThisTypeInAWindow  : OK
+
+
+
+real	0m1,413s
+user	0m1,421s
+sys	0m0,038s
