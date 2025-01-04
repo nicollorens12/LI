@@ -41,15 +41,34 @@ main :-
     all_distinct(L),
     %make every word
     findall([N1, N2, N3, N4], (word([A, B, C, D]), num(A, N1), num(B, N2), num(C, N3), num(D, N4)), Words),
-    
+    constraints(Words, D1, D2, D3, D4),
+
 
 %3: Labeling:
-    ...
+    labeling([], D1),
+    labeling([], D2),
+    labeling([], D3),
+    labeling([], D4),
 %4: Escrivim el resultat:
     writeN(D1), nl,
     writeN(D2), nl,
     writeN(D3), nl,
     writeN(D4), nl, halt.
+
+constraints([], _, _, _, _).
+constraints([[N1, N2, N3, N4] | T], D1, D2, D3, D4) :-
+    % Las letras deben estar en dados diferentes
+    append([D1, D2, D3, D4], AllDice),
+    (
+        (element(Pos1, AllDice, N1),
+         element(Pos2, AllDice, N2),
+         element(Pos3, AllDice, N3),
+         element(Pos4, AllDice, N4),
+         all_distinct([Pos1, Pos2, Pos3, Pos4]) % Garantiza que cada letra va a un dado distinto
+        )
+    ),
+    % Recursión para procesar el resto de las palabras
+    constraints(T, D1, D2, D3, D4).
     
 writeN(D) :- findall(X, (member(N,D),num(X,N)), L), write(L), nl, !.
 
