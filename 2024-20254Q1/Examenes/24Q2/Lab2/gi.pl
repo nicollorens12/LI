@@ -55,7 +55,7 @@ secondary(K,Cost,Path) :-
     write('  From: '), write(G), nl, write('    to: '), write(H), nl,
     write('  Trying cost:'),
     between(0, N, Cost), write(' '), write(Cost),
-    InitialState = ..., FinalState = ...,
+    InitialState = G, FinalState = H,
     computePath(Cost, InitialState, FinalState, [InitialState], Path),
     writeSolution(Cost, Path),
     !.
@@ -73,18 +73,26 @@ computePath(Cost, State, FinalState, PathSoFar, TotalPath) :-
 %                    The cost of each step is 1.
 oneStep(1,G,H) :-
     order(G,N),
-    ...
-    subs(...),
-    ...
-
+    between(1,N,U), between(1,N,V), U \= V,
+    subs([U,V],G,I),
+    normalForm(I,H).
+% graphs = [[1,2],[1,4],[1,5],[2,3],[2,4],[3,5]] List of tuples
 % order(G,N): the number of vertices of G is N
 order(G,N) :-
-    ...
+    flatten(G,L),
+    max_member(N,L).
 
 % subs([X,Y],G,H): H can be obtained from G with the exchange [X,Y]
-subs(...) :- ...
-...
-...
+subs([_,_],[],[]) :- !.
+subs([X,Y],[[X,Y]|T1],[[Y,X]|T2]) :- subs([X,Y],T1,T2), !.
+subs([X,Y],[[Y,X]|T1],[[X,Y]|T2]) :- subs([X,Y],T1,T2), !.
+subs([X,Y],[[X,Z]|T1],[[Y,Z]|T2]) :- subs([X,Y],T1,T2), !.
+subs([X,Y],[[Z,X]|T1],[[Z,Y]|T2]) :- subs([X,Y],T1,T2), !.
+subs([X,Y],[[Z,Y]|T1],[[Z,X]|T2]) :- subs([X,Y],T1,T2), !.
+subs([X,Y],[[Y,Z]|T1],[[X,Z]|T2]) :- subs([X,Y],T1,T2), !.
+subs([X,Y],[[U,V]|T1],[[U,V]|T2]) :- subs([X,Y],T1,T2), !.
+
+
 
 
 % the normal form of X is Y

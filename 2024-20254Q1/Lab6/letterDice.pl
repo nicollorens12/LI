@@ -57,18 +57,11 @@ main :-
 
 constraints([], _, _, _, _).
 constraints([[N1, N2, N3, N4] | T], D1, D2, D3, D4) :-
-    % Las letras deben estar en dados diferentes
-    append([D1, D2, D3, D4], AllDice),
-    (
-        (element(Pos1, AllDice, N1),
-         element(Pos2, AllDice, N2),
-         element(Pos3, AllDice, N3),
-         element(Pos4, AllDice, N4),
-         all_distinct([Pos1, Pos2, Pos3, Pos4]) % Garantiza que cada letra va a un dado distinto
-        )
-    ),
-    % Recursión para procesar el resto de las palabras
-    constraints(T, D1, D2, D3, D4).
+    member(X1,D1), X1 #= N1 #\/ X1 #= N2 #\/ X1 #= N3 #\/ X1 #= N4, 
+    member(X2,D2), X2 #= N1 #\/ X2 #= N2 #\/ X2 #= N3 #\/ X2 #= N4, 
+    member(X3,D3), X3 #= N1 #\/ X3 #= N2 #\/ X3 #= N3 #\/ X3 #= N4,  
+    member(X4,D4), X4 #= N1 #\/ X4 #= N2 #\/ X4 #= N3 #\/ X4 #= N4,  
+    constraints(T,D1,D2,D3,D4).
     
 writeN(D) :- findall(X, (member(N,D),num(X,N)), L), write(L), nl, !.
 

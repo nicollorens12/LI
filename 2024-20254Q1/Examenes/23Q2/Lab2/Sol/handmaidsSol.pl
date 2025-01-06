@@ -79,57 +79,47 @@ forEachDRexactlyKH.
 
 forEachDHexactlyOneR :-
     day(D), handmaid(H),
-    findall(hdr(H,D,R), row(R), Lits),
-    exactly(1,Lits),
+    findall(hdr(H,D,R),row(R),L),
+    exactly(1,L),
     fail.
 forEachDHexactlyOneR.
 
 forbiddenGroups :-
-    forbidden(L), member([H1,H2,H3],L), day(D),
-    writeOneClause([-coincide3(H1,H2,H3,D)]),
+    forbidden(L), member([H1,H2,H3],L),
+    day(D), row(R),
+    writeOneClause([-hdr(H1,D,R),-hdr(H2,D,R),-hdr(H3,D,R)]),
     fail.
 forbiddenGroups.
 
-% hdr(H,D,R) means "on day D, handmaid H is in row R"
-% together(H1,H2,D,R) means "handmaids H1 and H2 share row R on day D"
 relate_hdr_together :-
     day(D), row(R),
     handmaid(H1), handmaid(H2), H1 < H2,
-    writeOneClause([-hdr(H1,D,R),-hdr(H2,D,R),together(H1,H2,D,R)]),
+    expressAnd(together(H1,H2,D,R),[hdr(H1,D,R), hdr(H2,D,R)]),
     fail.
 relate_hdr_together.
 
-% together(H1,H2,D,R) means "handmaids H1 and H2 share row R on day D"
-% coincide2(H1,H2,D) means "handmaids H1 and H2 coincide on day D on some row"
 relate_together_coincide2 :-
     day(D),
     handmaid(H1), handmaid(H2), H1 < H2,
-    row(R),
-    writeOneClause([-together(H1,H2,D,R),coincide2(H1,H2,D)]),
+    findall(together(H1,H2,D,R),row(R),L),
+    expressOr(coincide2(H1,H2,D),L),
     fail.
 relate_together_coincide2.
 
-
-% this solution has at most C coincidences
 maxCoincidences(C) :-
     handmaid(H1), handmaid(H2), H1 < H2,
-    findall(coincide2(H1,H2,D),day(D),Lits),
-    atMost(C,Lits),
+    findall(coincide2(H1,H2,D),day(D),L),
+    atMost(C,L),
     fail.
 maxCoincidences(_).
 
-% coincide2(H1,H2,D) means "handmaids H1 and H2 coincide on day D on some row"
-% coincide3(H1,H2,H3,D) means "handmaids H1, H2, and H3 coincide on day D on some row"
 relate_coincide2_coincide3 :-
     day(D),
     handmaid(H1), handmaid(H2), handmaid(H3), H1 < H2, H2 < H3,
-    writeOneClause([-coincide2(H1,H2,D),-coincide2(H2,H3,D),coincide3(H1,H2,H3,D)]),
+    expressAnd(coincide3(H1,H2,H3,D),[coincide2(H1,H2,D),coincide2(H1,H3,D)]),
     fail.
 relate_coincide2_coincide3.
 
-% condition about mandatory groups
-% Additionally, some 'mandatory' groups of 3 handmaids should share a row someday 
-% mandatory([[1,2,3],[2,3,4],[3,4,5],[4,5,6],[13,14,15],[14,15,16],[16,17,18]]).
 mandatoryGroups :-
     mandatory(L1), member([H1,H2,H3],L1),
     findall(coincide3(H1,H2,H3,D),day(D),L2),
@@ -254,8 +244,8 @@ main:-
         numVars(N), numClauses(C),
         write('Generated '), write(C), write(' clauses over '), write(N), write(' variables. '),nl,
         shell('cat header clauses > infile.cnf',_),
-        write('Launching picosat...'), nl,
-        shell('picosat -v infile.cnf > model', Result),  % if sat: Result=10; if unsat: Result=20.
+        write('Launching kissat...'), nl,
+        shell('kissat -v infile.cnf > model', Result),  % if sat: Result=10; if unsat: Result=20.
         treatResult(Result,[]),!.
 
 treatResult(20,[]       ):- write('No solution exists.'), nl, halt.
@@ -274,8 +264,8 @@ treatResult(10,_):- %   shell('cat model',_),
         numVars(N),numClauses(C),
         write('Generated '), write(C), write(' clauses over '), write(N), write(' variables. '),nl,
         shell('cat header clauses > infile.cnf',_),
-        write('Launching picosat...'), nl,
-        shell('picosat -v infile.cnf > model', Result),  % if sat: Result=10; if unsat: Result=20.
+        write('Launching kissat...'), nl,
+        shell('kissat -v infile.cnf > model', Result),  % if sat: Result=10; if unsat: Result=20.
         treatResult(Result,M),!.
 treatResult(_,_):- write('cnf input error. Wrote something strange in your cnf?'), nl,nl, halt.
 
